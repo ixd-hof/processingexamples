@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/9241/trunk/library-template/resources
+END
+library.properties
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/9234/trunk/library-template/resources/library.properties
+END
+stylesheet.css
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/8795/trunk/library-template/resources/stylesheet.css
+END
+ChangeLog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/10261/trunk/library-template/resources/ChangeLog.txt
+END
+install_instructions.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/9234/trunk/library-template/resources/install_instructions.txt
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/10261/trunk/library-template/resources/build.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/9234/trunk/library-template/resources/build.xml
+END
