@@ -33,17 +33,6 @@ void draw()
   
   text("z: " + z_index, 20, 20);
   text("color filter: " + color_filter, 20, 40);
-  
-  /*
-  String index = "000" + index_file;
-  if (index_file >= 10 && index_file < 100)
-    index = "00" + index_file;
-  else if (index_file >= 100 && index_file < 1000)
-    index = "0" + index_file;
-
-  slice = loadImage("IM-0001-" + index + ".jpg");
-  image(slice, 0, 0);
-  */
 }
 
 void keyPressed() {
