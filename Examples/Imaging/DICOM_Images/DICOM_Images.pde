@@ -25,6 +25,7 @@ void setup()
   }
 }
 
+
 void draw()
 {
   tint(color_filter);
@@ -34,6 +35,7 @@ void draw()
   text("z: " + z_index, 20, 20);
   text("color filter: " + color_filter, 20, 40);
 }
+
 
 void keyPressed() {
   if (keyCode == UP && z_index <max_file-1)

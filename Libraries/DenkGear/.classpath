@@ -3,6 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="lib" path="/Applications/Processing.app/Contents/Resources/Java/core/library/core.jar"/>
-	<classpathentry kind="lib" path="/Users/m/Projekte/FH/Processing/Libraries/DenkGear/lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/munchberg/Projekte/FH/Creative Coding/Processing/Libraries/DenkGear/lib/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
