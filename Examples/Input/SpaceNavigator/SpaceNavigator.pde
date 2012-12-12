@@ -32,6 +32,7 @@ void draw()
   text("b0: " + spaceNavigator.get("b0"), 20, 140);
   text("b1: " + spaceNavigator.get("b1"), 20, 160);
   
+  // Draw a box with the received values
   spacebox();
 }
 
