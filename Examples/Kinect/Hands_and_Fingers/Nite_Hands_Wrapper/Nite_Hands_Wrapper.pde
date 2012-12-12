@@ -1,3 +1,7 @@
+// IxD Hof Creative Coding Class 2012
+// http://ixd-hof.de
+// This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
 import SimpleOpenNI.*;
 import fingertracker.*;
 
@@ -14,7 +18,7 @@ void setup() {
   kinect = new SimpleOpenNI(this);
   kinect.setMirror(true);
   kinect.enableDepth();
-  
+
   // Enable Hands
   kinect.enableGesture();
   kinect.enableHands();
@@ -23,7 +27,7 @@ void setup() {
 
   // Initialize hand position
   currentHand = null;
-  
+
   // Initialize finger tracking.
   // init_fingers(boolean only_hand);
   // true: detect only rectangle around detected hand
@@ -45,7 +49,7 @@ void draw() {
     noFill();
     stroke(255, 0, 0);
     ellipse(currentHand.x, currentHand.y, 20, 20);
-    
+
     // Detect and draw fingers
     fingers_update(kinect.depthMap());
     draw_fingers();
@@ -58,21 +62,21 @@ void draw() {
 
 // Hand detected
 void onCreateHands(int handId, PVector position, float time) {
-  println("Hand detected");
+  //println("Hand detected");
   kinect.convertRealWorldToProjective(position, position);
   currentHand = position;
 }
 
 // Hand position updated
 void onUpdateHands(int handId, PVector position, float time) {
-  println("Hand updated");
+  //println("Hand updated");
   kinect.convertRealWorldToProjective(position, position);
   currentHand = position;
 }
 
 // Hand lost
 void onDestroyHands(int handId, float time) {
-  println("Hand lost");
+  //println("Hand lost");
   currentHand = null;
   kinect.addGesture("RaiseHand");
 }

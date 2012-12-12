@@ -1,3 +1,7 @@
+// IxD Hof Creative Coding Class 2012
+// http://ixd-hof.de
+// This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
 import net.java.games.input.*;
 import net.java.games.input.Event;
 import net.java.games.input.EventQueue;

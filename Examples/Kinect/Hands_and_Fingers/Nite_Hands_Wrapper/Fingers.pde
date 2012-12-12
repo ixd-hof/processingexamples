@@ -1,10 +1,15 @@
+// IxD Hof Creative Coding Class 2012
+// http://ixd-hof.de
+// This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
 FingerTracker fingers;
 
 int threshold = 625;
-int melt = 150;
+int melt = 100;
 int crop = 150;
 int [] crop_depth = new int[crop*crop];
 boolean detect_hand = false;
+HashMap fingermap = new HashMap();
 
 void init_fingers(boolean only_hand)
 {
@@ -85,5 +90,21 @@ void draw_contour()
 
   for (int k = 0; k < fingers.getNumContours(); k++) {
     fingers.drawContour(k);
+  }
+}
+
+void keyPressed() {
+  if (key == CODED)
+  {
+    if (keyCode == UP)
+    {
+      melt += 10;
+      println("melt: " + melt);
+    } 
+    else if (keyCode == DOWN)
+    {
+      melt -= 10;
+      println("melt: " + melt);
+    }
   }
 }
