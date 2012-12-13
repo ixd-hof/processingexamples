@@ -6,7 +6,7 @@ FingerTracker fingertracker;
 
 int threshold = 625;
 int melt = 100;
-int crop = 150;
+int crop = 200;
 int [] crop_depth = new int[crop*crop];
 boolean detect_hand = false;
 HashMap fingermap = new HashMap();
@@ -47,7 +47,16 @@ void fingertracker_update(int[] depthMap)
       {
         int ocx = (int)currentHand.x+cx;
         int ocy = (int)currentHand.y+cy;
-        crop_depth[cy*crop+cx] = depthMap[((int)currentHand.y-crop/2+cy) * 640 + (int)currentHand.x-crop/2+cx];
+        
+        //text((currentHand.x-crop/2) + " " + (currentHand.x+crop/2) + " " + (currentHand.y-crop/2) + " " + (currentHand.y+crop/2), 20, 200);
+        if (currentHand.x-crop/2 > 0 && currentHand.x+crop/2 < 640 && currentHand.y-crop/2 > 0 && currentHand.y+crop/2 < 480)
+        {
+          crop_depth[cy*crop+cx] = depthMap[((int)currentHand.y-crop/2+cy) * 640 + (int)currentHand.x-crop/2+cx];
+        }
+        else
+        {
+          crop_depth[cy*crop+cx] = 0;
+        }
         hand_img.set(cx, cy, color(2048-crop_depth[cy*crop+cx]/8));
       }
     }
@@ -65,28 +74,28 @@ void fingertracker_update(int[] depthMap)
   //return fingertracker.getNumfingertracker();
 }
 
-PVector[] get_fingertracker()
+PVector[] get_fingers()
 {
-  PVector[] finger_positions = new PVector[fingertracker.getNumfingertracker()];
+  PVector[] finger_positions = new PVector[fingertracker.getNumFingers()];
 
-  for (int i = 0; i < fingertracker.getNumfingertracker(); i++)
+  for (int i = 0; i < fingertracker.getNumFingers(); i++)
   {  
     finger_positions[i] = fingertracker.getFinger(i);
   }
   return finger_positions;
 }
 
-int count_fingertracker()
+int count_fingers()
 {
-  return fingertracker.getNumfingertracker();
+  return fingertracker.getNumFingers();
 }
 
-void draw_fingertracker()
+void draw_fingers()
 {
   noStroke();
   fill(255, 100, 0);
 
-  for (int i = 0; i < fingertracker.getNumfingertracker(); i++) {
+  for (int i = 0; i < fingertracker.getNumFingers(); i++) {
     PVector position = fingertracker.getFinger(i);
     if (detect_hand == true)
       ellipse(position.x - 5 + currentHand.x - crop/2, position.y -5 + currentHand.y - crop/2, 10, 10);
@@ -111,11 +120,13 @@ void keyPressed() {
     if (keyCode == UP)
     {
       melt += 10;
+      fingertracker.setMeltFactor(melt);
       println("melt: " + melt);
     } 
     else if (keyCode == DOWN)
     {
       melt -= 10;
+      fingertracker.setMeltFactor(melt);
       println("melt: " + melt);
     }
   }

@@ -32,7 +32,7 @@ void setup() {
   // init_fingers(boolean only_hand);
   // true: detect only rectangle around detected hand
   // false: detect hands in whole scene
-  init_fingers(false);
+  init_fingertracker(true);
 }
 
 void draw() {
@@ -49,13 +49,17 @@ void draw() {
     noFill();
     stroke(255, 0, 0);
     ellipse(currentHand.x, currentHand.y, 20, 20);
+    
+    text("Hand: " + currentHand.x + " " + currentHand.y, 20, 20);
 
     // Detect and draw fingers
-    fingers_update(kinect.depthMap());
+    fingertracker_update(kinect.depthMap());
     draw_fingers();
     draw_contour();
     
     int num_fingers = count_fingers();
+    text("Fingers: " + num_fingers, 20, 40);
+    
     if (num_fingers > 0)
     {
       PVector[] fingers = get_fingers();
