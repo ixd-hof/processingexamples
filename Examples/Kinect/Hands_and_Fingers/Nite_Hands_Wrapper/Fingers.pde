@@ -2,7 +2,7 @@
 // http://ixd-hof.de
 // This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 
-FingerTracker fingers;
+FingerTracker fingertracker;
 
 int threshold = 625;
 int melt = 100;
@@ -11,30 +11,30 @@ int [] crop_depth = new int[crop*crop];
 boolean detect_hand = false;
 HashMap fingermap = new HashMap();
 
-void init_fingers(boolean only_hand)
+void init_fingertracker(boolean only_hand)
 {
   // Initialize finger tracker
   if (only_hand == false)
   {
     // for the whole camera image
-    fingers = new FingerTracker(this, 640, 480);
+    fingertracker = new FingerTracker(this, 640, 480);
   }
   else
   {
     // only for a rectangle around the tracked hand
-    fingers = new FingerTracker(this, crop, crop);
+    fingertracker = new FingerTracker(this, crop, crop);
   }
   // Define detection quality
-  fingers.setMeltFactor(melt);
+  fingertracker.setMeltFactor(melt);
 
   detect_hand = only_hand;
 }
 
-void fingers_update(int[] depthMap)
+void fingertracker_update(int[] depthMap)
 {
   // Detect hands grey and set threshold. Everything in the background is ignored.
   threshold = (int)currentHand.z+100;
-  fingers.setThreshold(threshold);
+  fingertracker.setThreshold(threshold);
 
   if (detect_hand == true)
   {
@@ -52,30 +52,42 @@ void fingers_update(int[] depthMap)
       }
     }
 
-    // Detect fingers in this area
-    fingers.update(crop_depth);
+    // Detect fingertracker in this area
+    fingertracker.update(crop_depth);
   }
   else
   {
-    //fingers.setThreshold(600);
-    fingers.update(depthMap);
+    //fingertracker.setThreshold(600);
+    fingertracker.update(depthMap);
   }
 
-  // Return amount of fingers
-  //return fingers.getNumFingers();
+  // Return amount of fingertracker
+  //return fingertracker.getNumfingertracker();
 }
 
-void get_fingers()
+PVector[] get_fingertracker()
 {
+  PVector[] finger_positions = new PVector[fingertracker.getNumfingertracker()];
+
+  for (int i = 0; i < fingertracker.getNumfingertracker(); i++)
+  {  
+    finger_positions[i] = fingertracker.getFinger(i);
+  }
+  return finger_positions;
 }
 
-void draw_fingers()
+int count_fingertracker()
+{
+  return fingertracker.getNumfingertracker();
+}
+
+void draw_fingertracker()
 {
   noStroke();
   fill(255, 100, 0);
 
-  for (int i = 0; i < fingers.getNumFingers(); i++) {
-    PVector position = fingers.getFinger(i);
+  for (int i = 0; i < fingertracker.getNumfingertracker(); i++) {
+    PVector position = fingertracker.getFinger(i);
     if (detect_hand == true)
       ellipse(position.x - 5 + currentHand.x - crop/2, position.y -5 + currentHand.y - crop/2, 10, 10);
     else
@@ -88,8 +100,8 @@ void draw_contour()
   stroke(255, 0, 100);
   noFill();
 
-  for (int k = 0; k < fingers.getNumContours(); k++) {
-    fingers.drawContour(k);
+  for (int k = 0; k < fingertracker.getNumContours(); k++) {
+    fingertracker.drawContour(k);
   }
 }
 
@@ -108,3 +120,4 @@ void keyPressed() {
     }
   }
 }
+

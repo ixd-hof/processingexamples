@@ -54,6 +54,12 @@ void draw() {
     fingers_update(kinect.depthMap());
     draw_fingers();
     draw_contour();
+    
+    int num_fingers = count_fingers();
+    if (num_fingers > 0)
+    {
+      PVector[] fingers = get_fingers();
+    }
   }
 }
 
