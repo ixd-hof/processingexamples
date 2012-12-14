@@ -66,12 +66,11 @@ public class DenkGear extends Thread {
 	Method signalEvent, blinkEvent, eSenseEvent, eegPowerEvent;
 
 	/**
-	 * a Constructor, usually called in the setup() method in your sketch to
-	 * initialize and start the library.
+	 * Initialize the library with default parameters.
 	 * 
-	 * @example Hello
-	 * @param theParent
+	 * @return void
 	 */
+	
 	public DenkGear(PApplet p) {
 		parent = p;
 		this.url = "127.0.0.1";
@@ -80,6 +79,12 @@ public class DenkGear extends Thread {
 
 		this.start();
 	}
+	
+	/**
+	 * Initialize the library with custom parameters.
+	 * 
+	 * @return void
+	 */
 
 	public DenkGear(PApplet p, String url, int port, boolean raw) {
 		this.parent = p;
@@ -89,6 +94,12 @@ public class DenkGear extends Thread {
 
 		this.start();
 	}
+	
+	/**
+	 * Default Java Thread function. Please ignore.
+	 * 
+	 * @return void
+	 */
 
 	public void start()
 	{
@@ -131,6 +142,12 @@ public class DenkGear extends Thread {
 		initThinkgear();
 		super.start();
 	}
+	
+	/**
+	 * Default Java Thread function. Please ignore.
+	 * 
+	 * @return void
+	 */
 
 	public void run()
 	{
@@ -172,7 +189,6 @@ public class DenkGear extends Thread {
 	{
 		if (d != null)
 		{
-			//println(data);
 			try {
 				Object obj = parser.parse(d);
 				JSONObject jsonObject = (JSONObject) obj;
@@ -241,7 +257,6 @@ public class DenkGear extends Thread {
 
 				if (jsonObject.containsKey("eegPower") == true)
 				{
-					//eegPowerTable.clear();
 					JSONObject eegPower = (JSONObject)jsonObject.get("eegPower");
 					tg_delta = (Long) eegPower.get("delta");
 					eegPowerTable.put("delta", (int)(long)tg_delta);
@@ -277,16 +292,7 @@ public class DenkGear extends Thread {
 			}
 		}
 	}
-
-
-	public synchronized HashMap getEegPower() {
-		return eegPowerTable;
-	}
-
-
-	public String sayHello() {
-		return "hello library.";
-	}
+	
 	/**
 	 * return the version of the library.
 	 * 
@@ -295,28 +301,5 @@ public class DenkGear extends Thread {
 	public static String version() {
 		return VERSION;
 	}
-
-	/**
-	 * 
-	 * @param theA
-	 *          the width of test
-	 * @param theB
-	 *          the height of test
-	 */
-	/*
-	public void setVariable(int theA, int theB) {
-		myVariable = theA + theB;
-	}
-	 */
-
-	/**
-	 * 
-	 * @return int
-	 */
-	/*
-	public int getVariable() {
-		return 1;
-	}
-	 */
 }
 
