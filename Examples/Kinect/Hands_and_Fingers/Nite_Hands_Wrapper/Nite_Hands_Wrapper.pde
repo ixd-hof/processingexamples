@@ -63,6 +63,12 @@ void draw() {
     if (num_fingers > 0)
     {
       PVector[] fingers = get_fingers();
+      
+      for (int i=0; i<num_fingers; i++)
+      {
+        fill(0, 255, 255);
+        text(i, fingers[i].x, fingers[i].y);
+      }
     }
   }
 }

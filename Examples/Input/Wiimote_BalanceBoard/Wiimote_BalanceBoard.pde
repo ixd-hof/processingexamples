@@ -25,6 +25,6 @@ void draw()
   // button_UP, button_DOWN, button_LEFT, button_RIGHT, button_ONE, button_TWO, button_PLUS, button_MINUS, button_HOME
   text("pitch: " + wm.pitch, 20, 100);
   text("roll: " + wm.roll, 20, 120);
-  text("Acceleration: x " + wm.acc_x + " | y " + acc_y + " | z " + acc_z, 20, 140);
+  text("Acceleration: x " + wm.acc_x + " | y " + wm.acc_y + " | z " + wm.acc_z, 20, 140);
 }
 
