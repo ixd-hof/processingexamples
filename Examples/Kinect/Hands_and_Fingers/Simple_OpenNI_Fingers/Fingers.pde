@@ -88,6 +88,8 @@ class Fingers
     for (int i = 0; i < fingertracker.getNumFingers(); i++)
     {  
       finger_positions[i] = fingertracker.getFinger(i);
+      finger_positions[i].x = current_hand.x + finger_positions[i].x - crop/2;
+      finger_positions[i].y = current_hand.y + finger_positions[i].y - crop/2;
     }
     return finger_positions;
   }
@@ -108,7 +110,10 @@ class Fingers
     for (int i = 0; i < fingertracker.getNumFingers(); i++) {
       PVector position = fingertracker.getFinger(i);
       if (detect_hand == true)
-        ellipse(position.x - 5 + current_hand.x - crop/2, position.y -5 + current_hand.y - crop/2, 10, 10);
+      {
+        ellipse(position.x - 5 - crop/2, position.y - 5 - crop/2, 10, 10);
+        line(0, 0, position.x - 5 - crop/2, position.y - 5 - crop/2);
+      }
       else
         ellipse(position.x - 5, position.y - 5, 10, 10);
     }
@@ -122,7 +127,7 @@ class Fingers
     noFill();
     
     pushMatrix();
-    translate(current_hand.x, current_hand.y);
+    translate(current_hand.x - crop/2, current_hand.y - crop/2);
     
     for (int k = 0; k < fingertracker.getNumContours(); k++) {
       fingertracker.drawContour(k);
