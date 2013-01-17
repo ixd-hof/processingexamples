@@ -10,6 +10,11 @@ SimpleOpenNI kinect;
 PVector currentHand;
 String lastGesture = "";
 PImage depth;
+PImage rgb_img;
+
+Fingers lefthand, righthand;
+
+Colortracker colortracker_red;
 
 void setup() {
   size(640, 480);
@@ -18,6 +23,8 @@ void setup() {
   kinect = new SimpleOpenNI(this);
   kinect.setMirror(true);
   kinect.enableDepth();
+  kinect.enableRGB(); // Kinect color image
+  kinect.alternativeViewPointDepthToImage(); // align depth data to image data
 
   // Enable Hands
   kinect.enableGesture();
@@ -29,16 +36,21 @@ void setup() {
   currentHand = null;
 
   // Initialize finger tracking.
-  // init_fingers(boolean only_hand);
-  // true: detect only rectangle around detected hand
-  // false: detect hands in whole scene
-  init_fingertracker(true);
+  // init_fingers(this, boolean only_hand);
+  lefthand = new Fingers(this, true);
+
+  righthand = new Fingers(this, true);
+  
+  // Color Tracker
+  color finger_red = color(213.0, 223.0, 111.0);
+  colortracker_red = new Colortracker(finger_red);
 }
 
 void draw() {
   // Update Kinect and read depth image
   kinect.update();
   depth = kinect.depthImage();
+  rgb_img = kinect.rgbImage();
 
   image(depth, 0, 0);
 
@@ -51,25 +63,34 @@ void draw() {
     ellipse(currentHand.x, currentHand.y, 20, 20);
     
     text("Hand: " + currentHand.x + " " + currentHand.y, 20, 20);
+    
+    // Detect and draw fingers of the left hand
+    lefthand.update(kinect.depthMap(), currentHand);
+    lefthand.draw_fingers();
+    lefthand.draw_contour();
 
-    // Detect and draw fingers
-    fingertracker_update(kinect.depthMap());
-    draw_fingers();
-    draw_contour();
-    
-    int num_fingers = count_fingers();
-    text("Fingers: " + num_fingers, 20, 40);
-    
-    if (num_fingers > 0)
+    int num_fingers_left = lefthand.count_fingers();
+    text("Fingers left: " + num_fingers_left, 20, 40);
+
+    if (num_fingers_left > 0)
     {
-      PVector[] fingers = get_fingers();
-      
-      for (int i=0; i<num_fingers; i++)
+      PVector[] fingers = lefthand.get_fingers();
+
+      for (int i=0; i<num_fingers_left; i++)
       {
         fill(0, 255, 255);
+        pushMatrix();
         text(i, fingers[i].x, fingers[i].y);
+        popMatrix();
+        
+        color f = rgb_img.get((int)fingers[i].x, (int)fingers[i].y);
+        fill(f);
+        rect(50*i, 0, 50, 50);
       }
     }
+    
+   // Color tracker
+   boolean color_found = colortracker_red.update(rgb_img, currentHand); 
   }
 }
 
