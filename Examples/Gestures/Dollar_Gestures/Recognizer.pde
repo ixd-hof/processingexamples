@@ -25,6 +25,7 @@ class Recorder
      recording = false;
   }
   
+  /*
   void update()
   {
     if( recording)
@@ -51,8 +52,10 @@ class Recorder
         hasPVectors = false;
       }
     }
+    */
   }
   
+  /*
   void draw( )
   {
      color c = color(0,0,0);
@@ -65,13 +68,14 @@ class Recorder
        for( int i = 1; i < points.length; i++)
        {
          stroke( c );
-         line( points[i-1].X, points[i-1].Y, 
-               points[i  ].X, points[i  ].Y);
+         line( points[i-1].x, points[i-1].y, 
+               points[i  ].x, points[i  ].y);
        }
      }
   }
+  
 }
-
+*/
 float Infinity = 1e9;
 
 
@@ -79,6 +83,8 @@ float Infinity = 1e9;
 // There is probably a better way to do it, but this works. 
 
 // Base point class. 
+
+/*
 class PVector
 {
   float X;
@@ -91,9 +97,10 @@ class PVector
   
   float distance( PVector other)
   {
-    return dist( X, Y, other.X, other.Y);
+    return dist( X, Y, other.x, other.y);
   }
 }
+*/
 
 class Rectangle
 {
@@ -368,7 +375,7 @@ float PathLength( PVector [] points)
   float d = 0.0;
   for( int i = 1; i < points.length; i++)
   {
-    d += points[i-1].distance( points[i]);
+    d += points[i-1].dist( points[i]);
   }
   return d;
 }
@@ -383,7 +390,7 @@ float PathDistance( PVector [] pts1, PVector [] pts2)
    float d = 0.0;
    for( int i = 0; i < pts1.length; i++)
    {
-     d += pts1[i].distance( pts2[i]);
+     d += pts1[i].dist( pts2[i]);
    }
    return d / (float)pts1.length;
 }
@@ -397,10 +404,10 @@ Rectangle BoundingBox( PVector [] points)
 
   for( int i = 1; i < points.length; i++)
   {
-    minX = min( points[i].X, minX);
-    maxX = max( points[i].X, maxX);
-    minY = min( points[i].Y, minY);
-    maxY = max( points[i].Y, maxY);
+    minX = min( points[i].x, minX);
+    maxX = max( points[i].x, maxX);
+    minY = min( points[i].y, minY);
+    maxY = max( points[i].y, maxY);
   }
   return new Rectangle( minX, minY, maxX - minX, maxY - minY);
 }
@@ -410,11 +417,11 @@ PVector Centroid( PVector [] points)
   PVector centriod = new PVector(0.0, 0.0);
   for( int i = 1; i < points.length; i++)
   {
-      centriod.X += points[i].X;
-      centriod.Y += points[i].Y;
+      centriod.x += points[i].x;
+      centriod.y += points[i].y;
   }  
-  centriod.X /= points.length;
-  centriod.Y /= points.length;
+  centriod.x /= points.length;
+  centriod.y /= points.length;
   return centriod;
 }
 
@@ -427,8 +434,8 @@ PVector [] RotateBy( PVector [] points, float theta)
    PVector [] newpoints = {};
    for( int i = 0; i < points.length; i++)
    {
-     float qx = (points[i].X - c.X) * Cos - (points[i].Y - c.Y) * Sin + c.X;
-     float qy = (points[i].X - c.X) * Sin + (points[i].Y - c.Y) * Cos + c.Y;
+     float qx = (points[i].x - c.x) * Cos - (points[i].y - c.y) * Sin + c.x;
+     float qy = (points[i].x - c.x) * Sin + (points[i].y - c.y) * Cos + c.y;
      newpoints = (PVector[]) append(newpoints, new PVector( qx, qy ));
    }
    return newpoints;
@@ -437,7 +444,7 @@ PVector [] RotateBy( PVector [] points, float theta)
 PVector [] RotateToZero( PVector [] points)
 {
    PVector c = Centroid( points );
-   float theta = atan2( c.Y - points[0].Y, c.X - points[0].X);
+   float theta = atan2( c.y - points[0].y, c.x - points[0].x);
    return RotateBy( points, -theta);
 }
 
@@ -462,11 +469,11 @@ PVector [] Resample( PVector [] points, int n)
          continue;
        }
        PVector pt2 = (PVector) stack.peek();
-       float d = pt1.distance( pt2);
+       float d = pt1.dist( pt2);
        if( (D + d) >= I)
        {
-          float qx = pt1.X + (( I - D ) / d ) * (pt2.X - pt1.X);
-          float qy = pt1.Y + (( I - D ) / d ) * (pt2.Y - pt1.Y);
+          float qx = pt1.x + (( I - D ) / d ) * (pt2.x - pt1.x);
+          float qy = pt1.y + (( I - D ) / d ) * (pt2.y - pt1.y);
           PVector q = new PVector( qx, qy);
           newpoints = (PVector [])append( newpoints, q);
           stack.push( q );
@@ -490,8 +497,8 @@ PVector [] ScaleToSquare( PVector [] points, float sz)
     PVector [] newpoints = {};
     for( int i = 0; i < points.length; i++)
     {
-       float qx = points[i].X * (sz / B.Width);
-       float qy = points[i].Y * (sz / B.Height);
+       float qx = points[i].x * (sz / B.Width);
+       float qy = points[i].y * (sz / B.Height);
        newpoints = (PVector [])append( newpoints,  new PVector(qx, qy));
     }
     return newpoints;
@@ -539,8 +546,8 @@ PVector [] TranslateToOrigin( PVector [] points)
    PVector [] newpoints = {};
    for( int i = -0; i < points.length; i++)
    {
-     float qx = points[i].X - c.X;
-     float qy = points[i].Y - c.Y;
+     float qx = points[i].x - c.x;
+     float qy = points[i].y - c.y;
      newpoints = (PVector [])append( newpoints,  new PVector(qx, qy));
    }
    return newpoints;

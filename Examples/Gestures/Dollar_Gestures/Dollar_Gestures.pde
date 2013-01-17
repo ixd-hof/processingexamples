@@ -4,6 +4,7 @@
 // http://depts.washington.edu/aimgroup/proj/dollar/
 //
 
+import java.util.Stack;
 
 Recognizer recognizer;
 Result result = null;
