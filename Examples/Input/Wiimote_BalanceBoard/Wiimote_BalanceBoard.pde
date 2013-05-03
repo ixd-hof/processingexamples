@@ -4,18 +4,19 @@
 
 // Wiimote Example using WiiRemoteJ.jar and Bluecove
 
-WiiMote wm;
-//WiiBalanceBoard bb;
+//WiiMote wm;
+WiiBalanceBoard bb;
 
 void setup()
 {
   size(500, 500);
   wm = new WiiMote();
-  //bb = new WiiBalanceBoard();
+  bb = new WiiBalanceBoard();
 }
 
 void draw()
 {
+  /*
   // Wiimote
   text("Wiimote:", 20, 20);
   text("still: " + wm.still, 20, 40);
@@ -26,5 +27,7 @@ void draw()
   text("pitch: " + wm.pitch, 20, 100);
   text("roll: " + wm.roll, 20, 120);
   text("Acceleration: x " + wm.acc_x + " | y " + wm.acc_y + " | z " + wm.acc_z, 20, 140);
+  */
+  text("left: " + bb.left, 20, 20);
 }
 

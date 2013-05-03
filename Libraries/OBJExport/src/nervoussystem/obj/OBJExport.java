@@ -23,8 +23,10 @@ package nervoussystem.obj;
 import java.io.*;
 import java.util.HashMap;
 import processing.core.*;
+//import processing.core.PConstants;
+//import processing.opengl.*;
 
-public class OBJExport extends PGraphics {
+public class OBJExport extends PGraphics implements PConstants {
   File file;
   PrintWriter writer;
   PVector[] pts;
@@ -38,6 +40,8 @@ public class OBJExport extends PGraphics {
   int DEFAULT_VERTICES = 4096;
   int VERTEX_FIELD_COUNT = 36;
   float vertices[][];
+  int vertexCount = 0;
+  PApplet parent;
   
   public OBJExport() {
     vertices = new float[DEFAULT_VERTICES][VERTEX_FIELD_COUNT];
@@ -333,5 +337,5 @@ public class OBJExport extends PGraphics {
     lines = newLines;
    }
    lines[lineCount++] = l;
-  }  
+  }
 }
