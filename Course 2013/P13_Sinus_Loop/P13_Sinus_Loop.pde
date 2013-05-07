@@ -11,7 +11,6 @@ void draw()
   background(200);
   
   translate(0, height/2);
-  //translate(width/2, height/2);
   
   float step = map(mouseX, 0, width, 10, 50);
   float amplitude = map(mouseY, 0, height, 10, 100);

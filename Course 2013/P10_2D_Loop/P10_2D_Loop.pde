@@ -12,7 +12,6 @@ void draw()
   {
     for (int j=20; j<=340; j+=20)
     {
-      println(i + " " + j);
       //fill(i, j, 100);
       ellipse(i, j, 10, 10);
     }

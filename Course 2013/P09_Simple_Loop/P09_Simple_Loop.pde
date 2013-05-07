@@ -2,7 +2,7 @@ import processing.pdf.*;
 
 void setup()
 {
-  size(400, 400, PDF, "filename.pdf");
+  size(400, 400);
 }
 
 void draw()
