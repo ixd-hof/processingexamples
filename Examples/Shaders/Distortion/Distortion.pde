@@ -1,8 +1,4 @@
 // Based on https://github.com/SableRaf/Processing-Experiments
-import processing.video.*;
-
-Capture cam;
-
 PShader myShader;
 PImage img, perlin_noise;
 PGraphics canvas;
@@ -12,17 +8,13 @@ void setup() {
   frameRate(30);
   noStroke();
 
-  //img = loadImage("streetview.jpg");
-  img = createImage(width, height, RGB);
+  img = loadImage("streetview.jpg");
   perlin_noise = loadImage("perlin_noise.jpg");
   
   canvas = createGraphics(width, height, P3D);
   canvas.background(100);
 
   myShader = loadShader("shader.glsl");
-
-  cam = new Capture(this, Capture.list()[0]);
-  cam.start();
   
   //myShader.set("resolution", float(width), float(height));   
   myShader.set("colorMap", img); //img
@@ -32,12 +24,6 @@ void setup() {
 void draw()
 {
   background(0);
-  
-  if (cam.available() == true) {
-    cam.read();
-    img.pixels = cam.pixels;
-    img.updatePixels();
-  }
   
   canvas.beginDraw();
   //canvas.background(100);
