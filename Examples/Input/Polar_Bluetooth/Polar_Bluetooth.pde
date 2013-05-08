@@ -2,6 +2,9 @@
 // Thanks to Google mytracks for the protocol documentation
 // https://code.google.com/p/mytracks/
 
+// IxD Hof Creative Coding Class
+// http://ixd-hof.de
+
 import processing.serial.*;
 
 Serial myPort;
