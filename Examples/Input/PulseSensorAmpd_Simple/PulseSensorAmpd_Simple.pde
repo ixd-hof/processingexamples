@@ -1,3 +1,10 @@
+// Simple implementation of the Pulse Sensor for Arduino
+// http://pulsesensor.myshopify.com/
+// Write the enclosed Arduino project to your board and connect the purple pin to analog 0
+
+// IxD Hof Creative Coding Class
+// http://ixd-hof.de
+
 import processing.serial.*;
 
 Serial port;     
