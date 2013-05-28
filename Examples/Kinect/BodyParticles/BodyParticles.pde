@@ -13,7 +13,8 @@ void setup()
   size(640, 480, P3D);  // strange, get drawing error in the cameraFrustum if i use P3D, in opengl there is no problem
   context = new SimpleOpenNI(this);
 
-  context.openFileRecording("test2.oni");
+  // Comment out for live image
+  context.openFileRecording("test.oni");
   println("This file has " + context.framesPlayer() + " frames.");
 
   // disable mirror
