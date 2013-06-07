@@ -11,11 +11,11 @@ void parseJSON(String in)
 {
   //{"eSense":{"attention":0,"meditation":0},"eegPower":{"delta":59283,"theta":8704,"lowAlpha":2683,"highAlpha":598,"lowBeta":1355,"highBeta":320,"lowGamma":117,"highGamma":5125},"poorSignalLevel":200}
 
-  JSON thinkJSON = JSON.parse(in);
+  JSONObject thinkJSON = JSONObject.parse(in);
   //println(thinkJSON.length());
   //println(thinkJSON);
 
-  Iterator itr = thinkJSON.keys();
+  Iterator itr = thinkJSON.keys().iterator();
 
   while (itr.hasNext ()) {
     String element = (String)itr.next();
@@ -29,7 +29,7 @@ void parseJSON(String in)
     }
     else if (element.equals("eegPower"))
     {
-      JSON eegPowerJSON = thinkJSON.getObject("eegPower");
+      JSONObject eegPowerJSON = thinkJSON.getJSONObject("eegPower");
       EegPower eegPower = new EegPower();
       eegPower.delta = eegPowerJSON.getInt("delta");
       eegPower.theta = eegPowerJSON.getInt("theta");
@@ -45,7 +45,7 @@ void parseJSON(String in)
     }
     else if (element.equals("eSense"))
     {
-      JSON eSenseJSON = thinkJSON.getObject("eSense");
+      JSONObject eSenseJSON = thinkJSON.getJSONObject("eSense");
       ESense eSense = new ESense();
       eSense.attention = eSenseJSON.getInt("attention");
       eSense.meditation = eSenseJSON.getInt("meditation");

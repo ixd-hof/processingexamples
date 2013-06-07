@@ -1,5 +1,5 @@
 import processing.net.*;
-import org.json.*;
+//import org.json.*;
 import java.util.*;
 
 int poorSignalLevel;
@@ -18,7 +18,7 @@ void draw()
 {
   background(255);
   
-  text(20, 20, "poorSignalLevel: " + poorSignalLevel, 20, 20);
+  text("poorSignalLevel: " + poorSignalLevel, 20, 20, 20, 20);
   
   // if eeg headset is active
   if (poorSignalLevel < 200)
