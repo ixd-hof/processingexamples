@@ -16,6 +16,11 @@ void setup()
 
   // Enable OpenNI
   context = new SimpleOpenNI(this);
+  
+  // Load recorded scene
+  // Comment out for live image
+  context.openFileRecording("test.oni");
+  
   context.setMirror(true);
   context.enableDepth(); // Kinect depth image
   context.enableRGB(); // Kinect color image
