@@ -1,5 +1,4 @@
 import processing.net.*;
-import org.json.*;
 import java.util.*;
 
 int poorSignalLevel;

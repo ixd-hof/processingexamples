@@ -12,20 +12,21 @@ void parseJSON(String in)
   //{"eSense":{"attention":0,"meditation":0},"eegPower":{"delta":59283,"theta":8704,"lowAlpha":2683,"highAlpha":598,"lowBeta":1355,"highBeta":320,"lowGamma":117,"highGamma":5125},"poorSignalLevel":200}
 
   JSONObject thinkJSON = JSONObject.parse(in);
-  //println(thinkJSON.length());
-  //println(thinkJSON);
 
   Iterator itr = thinkJSON.keys().iterator();
 
-  while (itr.hasNext ()) {
+  while (itr.hasNext ())
+  {
     String element = (String)itr.next();
-    //println(element);
+
     if (element.equals("poorSignalLevel"))
     {
       int poorSignalLevel = thinkJSON.getInt("poorSignalLevel");
       try {
         poorSignalLevelEvent(poorSignalLevel);
-      } catch (Exception e) {}
+      } 
+      catch (Exception e) {
+      }
     }
     else if (element.equals("eegPower"))
     {
@@ -41,7 +42,9 @@ void parseJSON(String in)
       eegPower.highGamma = eegPowerJSON.getInt("highGamma");
       try {
         eegPowerEvent(eegPower);
-      } catch (Exception e) {}
+      } 
+      catch (Exception e) {
+      }
     }
     else if (element.equals("eSense"))
     {
@@ -51,21 +54,27 @@ void parseJSON(String in)
       eSense.meditation = eSenseJSON.getInt("meditation");
       try {
         eSenseEvent(eSense);
-      } catch (Exception e) {}
+      } 
+      catch (Exception e) {
+      }
     }
     else if (element.equals("blinkStrength"))
     {
       int blinkStrength = thinkJSON.getInt("blinkStrength");
       try {
         blinkEvent(blinkStrength);
-      } catch (Exception e) {}
+      } 
+      catch (Exception e) {
+      }
     }
     else if (element.equals("rawEeg"))
     {
       int rawEeg = thinkJSON.getInt("rawEeg");
       try {
         rawEegEvent(rawEeg);
-      } catch (Exception e) {}
+      } 
+      catch (Exception e) {
+      }
     }
   }
 }
@@ -90,3 +99,4 @@ class ESense {
   {
   }
 }
+
