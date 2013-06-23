@@ -57,5 +57,17 @@ void draw()
     translate(SKEL_RIGHT_HAND.x, SKEL_RIGHT_HAND.y, 0);
     ellipse(0, 0, 20, 20);
     popMatrix();
+    
+    fill(255, 100, 0);
+    pushMatrix();
+    translate(SKEL_LEFT_FOOT.x, SKEL_LEFT_FOOT.y, 0);
+    ellipse(0, 0, 20, 20);
+    popMatrix();
+    
+    fill(255, 100, 255);
+    pushMatrix();
+    translate(SKEL_RIGHT_FOOT.x, SKEL_RIGHT_FOOT.y, 0);
+    ellipse(0, 0, 20, 20);
+    popMatrix();
   }
 }

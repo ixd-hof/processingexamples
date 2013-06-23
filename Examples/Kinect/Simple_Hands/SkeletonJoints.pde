@@ -99,6 +99,62 @@ boolean updateSketeton()
       SKEL_RIGHT_HAND.y = jointPos2D.y;
       SKEL_RIGHT_HAND.z = jointPos2D.z;
       
+      // get position of the torso
+      confidence = context.getJointPositionSkeleton(uid, SimpleOpenNI.SKEL_TORSO, jointPos);
+      context.convertRealWorldToProjective(jointPos, jointPos2D);
+
+      SKEL_TORSO.x = jointPos2D.x;
+      SKEL_TORSO.y = jointPos2D.y;
+      SKEL_TORSO.z = jointPos2D.z;
+      
+      // get position of the left hip
+      confidence = context.getJointPositionSkeleton(uid, SimpleOpenNI.SKEL_LEFT_HIP, jointPos);
+      context.convertRealWorldToProjective(jointPos, jointPos2D);
+
+      SKEL_LEFT_HIP.x = jointPos2D.x;
+      SKEL_LEFT_HIP.y = jointPos2D.y;
+      SKEL_LEFT_HIP.z = jointPos2D.z;
+      
+      // get position of the left knee
+      confidence = context.getJointPositionSkeleton(uid, SimpleOpenNI.SKEL_LEFT_KNEE, jointPos);
+      context.convertRealWorldToProjective(jointPos, jointPos2D);
+
+      SKEL_LEFT_KNEE.x = jointPos2D.x;
+      SKEL_LEFT_KNEE.y = jointPos2D.y;
+      SKEL_LEFT_KNEE.z = jointPos2D.z;
+      
+      // get position of the left foot
+      confidence = context.getJointPositionSkeleton(uid, SimpleOpenNI.SKEL_LEFT_FOOT, jointPos);
+      context.convertRealWorldToProjective(jointPos, jointPos2D);
+
+      SKEL_LEFT_FOOT.x = jointPos2D.x;
+      SKEL_LEFT_FOOT.y = jointPos2D.y;
+      SKEL_LEFT_FOOT.z = jointPos2D.z;
+      
+      // get position of the right hip
+      confidence = context.getJointPositionSkeleton(uid, SimpleOpenNI.SKEL_RIGHT_HIP, jointPos);
+      context.convertRealWorldToProjective(jointPos, jointPos2D);
+
+      SKEL_RIGHT_HIP.x = jointPos2D.x;
+      SKEL_RIGHT_HIP.y = jointPos2D.y;
+      SKEL_RIGHT_HIP.z = jointPos2D.z;
+      
+      // get position of the right knee
+      confidence = context.getJointPositionSkeleton(uid, SimpleOpenNI.SKEL_RIGHT_KNEE, jointPos);
+      context.convertRealWorldToProjective(jointPos, jointPos2D);
+
+      SKEL_RIGHT_KNEE.x = jointPos2D.x;
+      SKEL_RIGHT_KNEE.y = jointPos2D.y;
+      SKEL_RIGHT_KNEE.z = jointPos2D.z;
+      
+      // get position of the right knee
+      confidence = context.getJointPositionSkeleton(uid, SimpleOpenNI.SKEL_RIGHT_FOOT, jointPos);
+      context.convertRealWorldToProjective(jointPos, jointPos2D);
+
+      SKEL_RIGHT_FOOT.x = jointPos2D.x;
+      SKEL_RIGHT_FOOT.y = jointPos2D.y;
+      SKEL_RIGHT_FOOT.z = jointPos2D.z;
+      
       return true;
     }
     catch (Error e)
