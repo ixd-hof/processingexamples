@@ -7,12 +7,11 @@ PImage img;
 TouchImage ti, ti2;
 
 HashMap TouchObjects = new HashMap();
+//PGraphics Picker;
 
 void setup() {
   size(displayWidth, displayHeight, P3D);
   noStroke();
-
-  picker = new Picker(this);
 
   tuioClient  = new TuioProcessing(this);
 
