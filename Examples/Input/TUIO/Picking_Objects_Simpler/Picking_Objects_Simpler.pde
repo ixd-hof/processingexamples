@@ -1,11 +1,7 @@
-import picking.*;
 import TUIO.*;
 import java.util.*;
 
 TuioProcessing tuioClient;
-
-Picker picker;
-//int picked_id = -1;
 
 PImage img;
 TouchImage ti, ti2;
