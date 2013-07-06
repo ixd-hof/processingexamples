@@ -6,33 +6,36 @@ TuioProcessing tuioClient;
 PImage img;
 TouchImage ti, ti2;
 
-HashMap TouchObjects = new HashMap();
-//PGraphics Picker;
+PGraphics Picker;
 
 void setup() {
-  size(displayWidth, displayHeight, P3D);
+  size(1000, 500, P3D);
   noStroke();
 
-  tuioClient  = new TuioProcessing(this);
+  tuioClient = new TuioProcessing(this);
+  Picker = createGraphics(width, height);
 
   img = loadImage("nasa_buzz.jpg");
-  ti = new TouchImage(img, new PVector(width/4, height/2));
-  ti2 = new TouchImage(img, new PVector(width-width/4, height/2));
+  ti = new TouchImage(img, Picker, 100, width/4, height/2);
+  ti2 = new TouchImage(img, Picker, 200, width-width/4, height/2);
 }
 
 void draw()
 {
   background(255);
 
-  if (TouchObjects.size() > 0)
-  {
-    TuioCursor [] cursors = (TuioCursor[])TouchObjects.get(1);
-    text(cursors.length, 20, 20);
-    text(cursors[0].getX(), 20, 40);
-  }
-
   Vector tuioCursorList = tuioClient.getTuioCursors();
 
+  // Reset Picker
+  Picker.beginDraw();
+  Picker.background(255);
+  Picker.endDraw();
+
+  imageMode(CORNER);
+  image(Picker, 0, 0);
+
+  ti.draw_picker();
+  ti2.draw_picker();
   ti.draw(tuioClient.getTuioCursors());
   ti2.draw(tuioClient.getTuioCursors());
 
@@ -54,51 +57,62 @@ class TouchImage
 {
   PImage img;
   PVector pos;
+  PVector last_pos;
   float angle;
   PGraphics picker;
+  int id;
 
-  TouchImage(PImage image, PVector init_position)
+  TouchImage(PImage image, PGraphics parent_picker, int picking_id, int x, int y)
   {
     img = image;
-    pos = init_position;
-    picker = createGraphics(width, height);
+    pos = new PVector(x, y);
+    picker = parent_picker;
+    id = picking_id;
   }
 
-  void draw(Vector tuioCursorList)
+  void draw_picker()
   {
     rectMode(CENTER);
     imageMode(CENTER);
     picker.beginDraw();
     picker.rectMode(CENTER);
+    picker.noStroke();
     //picker.imageMode(CENTER);
-    picker.background(255);
+    //picker.background(255);
     picker.pushMatrix();
     picker.translate(pos.x, pos.y);
     picker.rotate(angle);
-    picker.fill(0);
+    picker.fill(id);
     picker.rect(0, 0, img.width, img.height);
     picker.popMatrix();
     picker.endDraw();
+  }
 
+  void draw(Vector tuioCursorList)
+  {
     pushMatrix();
     //image(picker, 0, 0);
     translate(pos.x, pos.y);
     rotate(angle);
-    image(img, 0, 0);
+    //image(img, 0, 0);
     popMatrix();
 
-    Vector touch_cursors = (Vector)tuioCursorList.clone();
+    Vector touch_cursors = new Vector(); //(Vector)tuioCursorList.clone();
 
     for (int i=0; i<tuioCursorList.size(); i++)
     {
       TuioCursor tcur = (TuioCursor)tuioCursorList.elementAt(i);
-      if (brightness(picker.get(int(tcur.getX()*width), int(tcur.getY()*height))) != 0)
+      int picked_color = int(brightness(picker.get(int(tcur.getX()*width), int(tcur.getY()*height))));
+      //int last_color = int(brightness(get(int(last_pos.x), int(last_pos.y))));
+      println(id + ": " + picked_color);
+      if (picked_color == id)
       {
-        println(touch_cursors.size());
-        touch_cursors.remove(i);
+        touch_cursors.add(tcur);
       }
+      //println(touch_cursors.size());
     }
-    
+
+
     if (touch_cursors.size() == 1)
     {
       TuioCursor tcur = (TuioCursor)touch_cursors.elementAt(0);
@@ -113,9 +127,13 @@ class TouchImage
       PVector vcur1 = new PVector(tcur1.getX()*width, tcur1.getY()*height);
       PVector center = PVector.lerp(vcur0, vcur1, 0.5);
       angle = atan2(vcur0.y - vcur1.y, vcur0.x - vcur1.x);
-      println(angle + " " + pos.x + " " + pos.y);
+      //println(angle + " " + pos.x + " " + pos.y);
       pos.x = center.x;
       pos.y = center.y;
     }
+
+    //println(id + ": " + pos.x + " " + pos.y);
+    //last_pos = pos;
   }
 }
+
