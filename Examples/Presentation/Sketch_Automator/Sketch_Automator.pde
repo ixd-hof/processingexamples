@@ -64,7 +64,7 @@ void openSketch()
     "lib/pde.jar:lib/antlr.jar:lib/jna.jar:lib/ant.jar:lib/ant-launcher.jar:core/library/core.jar:lib/org.eclipse.osgi_3.8.1.v20120830-144521.jar:lib/jdi.jar:lib/jdimodel.jar:lib/com.ibm.icu_4.4.2.v20110823.jar", 
     "processing.mode.java.Commander", 
     "--sketch=" + path + current_sketch, 
-    "--output=~/Desktop/P5Temp", 
+    "--output=/Users/m/Desktop/P5Temp", 
     "--present", 
     "--force"
   };
@@ -92,7 +92,7 @@ void openSketch()
 void killSketch()
 {
   try {
-    p = Runtime.getRuntime().exec("pgrep -f " + current_sketch);
+    p = Runtime.getRuntime().exec(sketchPath("") + "/pgrep.sh " + current_sketch);
 
     BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
