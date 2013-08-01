@@ -1,5 +1,6 @@
 // Thanks to https://github.com/jherico/
 // and 38leinaD https://developer.oculusvr.com/forums/viewtopic.php?f=20&t=88&p=39427#p977
+// Image: NASA https://commons.wikimedia.org/wiki/File:Buzz_Aldrin_Apollo_Spacesuit.jpg
 
 // A very basic example hwo to render a sketch on Oculus Rift
 
@@ -103,4 +104,3 @@ void set_shader(String eye)
   barrel.set("ScaleIn", (2.0f/w), (2.0f/h) / as);
   barrel.set("HmdWarpParam", K0, K1, K2, K3);
 }
-
