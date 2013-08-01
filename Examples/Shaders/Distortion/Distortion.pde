@@ -36,7 +36,7 @@ void draw()
   canvas.filter(BLUR, 3);
   canvas.endDraw();
 
-  myShader.set("time", millis() / 1000.0);
+  //myShader.set("time", millis() / 1000.0);
   
   shader(myShader);
   image(img, 0, 0, width, height);
