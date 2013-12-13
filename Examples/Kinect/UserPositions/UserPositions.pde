@@ -6,10 +6,11 @@ void setup()
 {
   size(640, 480, P3D);
   
-  // Enable and load recording in data folder
-  context = new SimpleOpenNI(this, "Kinect_02.oni");
-  
   // Enable Kinect
+  context = new SimpleOpenNI(this);
+  
+  // or
+  // Enable and load recording in data folder
   //context = new SimpleOpenNI(this, "Kinect_02.oni");
   
   context.setMirror(false);
