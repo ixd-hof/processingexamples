@@ -5,15 +5,11 @@ import pt.citar.diablu.processing.mindset.*;
 MindSet mindset;
 int attention;
 int meditation;
-int blinkstrenght;
+int blinkstrength;
 int strength;
-
-int numSamples = 60;
-ArrayList attSamples;
 
 void setup() {
   size(512, 512);
-  attSamples = new ArrayList();
   mindset = new MindSet(this, "/dev/cu.MindWaveMobile-DevA");
 }
 
@@ -21,6 +17,11 @@ void setup() {
 void draw()
 {
   background(0);
+  
+  text("Signal: " + strength, 20, 20);
+  text("Attention Level: " + attention, 20, 40);
+  text("Meditation Level: " + meditation, 20, 20);
+  text("Blink: " + blinkstrength, 20, 20);
 }
 
 // Print signal level
@@ -46,7 +47,7 @@ public void meditationEvent(int meditationLevel)
 public void blinkEvent(int blinkStrength)
 {
   println("Blinked: " + blinkStrength);
-  blinkstrenght = blinkStrength;
+  blinkstrength = blinkStrength;
 }
 
 public void eegEvent(int delta, int theta, int low_alpha, int high_alpha, int low_beta, int high_beta, int low_gamma, int mid_gamma) 
