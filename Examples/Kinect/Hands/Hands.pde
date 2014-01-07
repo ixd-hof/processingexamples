@@ -1,20 +1,3 @@
-/* --------------------------------------------------------------------------
- * SimpleOpenNI Hands3d Test
- * --------------------------------------------------------------------------
- * Processing Wrapper for the OpenNI/Kinect 2 library
- * http://code.google.com/p/simple-openni
- * --------------------------------------------------------------------------
- * prog:  Max Rheiner / Interaction Design / Zhdk / http://iad.zhdk.ch/
- * date:  12/12/2012 (m/d/y)
- * ----------------------------------------------------------------------------
- * This demos shows how to use the gesture/hand generator.
- * It's not the most reliable yet, a two hands example will follow
- * ----------------------------------------------------------------------------
- */
-
-import java.util.Map;
-import java.util.Iterator;
-
 import SimpleOpenNI.*;
 
 SimpleOpenNI context;
