@@ -25,6 +25,29 @@ void testApp::draw()
 	oculusRift.setNeedSensorReadingThisFrame( true );
 	
 	glEnable( GL_DEPTH_TEST );
+    
+    ofMatrix4x4 m = oculusRift.getHeadsetOrientationMat();
+    ofLog(OF_LOG_NOTICE, ofToString(m.getRowAsVec4f(0)));
+    
+    ofxOscMessage msg;
+    msg.setAddress("/headsetorientation");
+    msg.addFloatArg(m.getRowAsVec4f(0).x);
+    msg.addFloatArg(m.getRowAsVec4f(0).y);
+    msg.addFloatArg(m.getRowAsVec4f(0).z);
+    msg.addFloatArg(m.getRowAsVec4f(0).w);
+    msg.addFloatArg(m.getRowAsVec4f(1).x);
+    msg.addFloatArg(m.getRowAsVec4f(1).y);
+    msg.addFloatArg(m.getRowAsVec4f(1).z);
+    msg.addFloatArg(m.getRowAsVec4f(1).w);
+    msg.addFloatArg(m.getRowAsVec4f(2).x);
+    msg.addFloatArg(m.getRowAsVec4f(2).y);
+    msg.addFloatArg(m.getRowAsVec4f(2).z);
+    msg.addFloatArg(m.getRowAsVec4f(2).w);
+    msg.addFloatArg(m.getRowAsVec4f(3).x);
+    msg.addFloatArg(m.getRowAsVec4f(3).y);
+    msg.addFloatArg(m.getRowAsVec4f(3).z);
+    msg.addFloatArg(m.getRowAsVec4f(3).w);
+    sender.sendMessage(msg);
 	
 	cam.begin();
 	
@@ -56,4 +79,12 @@ void testApp::draw()
 	cam.end();
 	
 	glDisable( GL_DEPTH_TEST );	
+}
+
+void testApp::mouseMoved(int x, int y){
+	ofxOscMessage m;
+	m.setAddress("/mouse/position");
+	m.addIntArg(x);
+	m.addIntArg(y);
+	sender.sendMessage(m);
 }

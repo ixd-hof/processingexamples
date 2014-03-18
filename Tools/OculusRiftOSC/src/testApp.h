@@ -16,4 +16,6 @@ class testApp : public ofBaseApp
 		ofxOculusRift		oculusRift;
 	
 		ofEasyCam			cam;
+    
+        void mouseMoved(int x, int y);
 };
