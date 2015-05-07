@@ -30,7 +30,7 @@ void setup()
 
     Particle p_random = physics.makeParticle(1.0, random(width), random(height), 0 );
 
-    physics.makeSpring( p_point, p_random, 0.1, 1, 100);
+    physics.makeSpring( p_point, p_random, 0.1, 1, 150);
   }
 }
 
@@ -47,6 +47,15 @@ void draw()
   {
     p = physics.getParticle(i);
     ellipse(p.position().x(), p.position().y(), 10, 10);
+  }
+}
+
+void mousePressed()
+{
+  for (int i=0; i<physics.numberOfParticles(); i++)
+  {
+    p = physics.getParticle(i);
+    p.velocity().add(random(2), 0, 0);
   }
 }
 
