@@ -21,7 +21,7 @@ void setup()
 
 void draw()
 {
-  mouse.position().set(mouseX, mouseY, 0 ;
+  mouse.position().set(mouseX, mouseY, 0);
   physics.tick();
 
   background(255);

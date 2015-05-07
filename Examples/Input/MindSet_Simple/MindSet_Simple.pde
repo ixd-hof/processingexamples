@@ -20,8 +20,8 @@ void draw()
   
   text("Signal: " + strength, 20, 20);
   text("Attention Level: " + attention, 20, 40);
-  text("Meditation Level: " + meditation, 20, 20);
-  text("Blink: " + blinkstrength, 20, 20);
+  text("Meditation Level: " + meditation, 20, 60);
+  text("Blink: " + blinkstrength, 20, 80);
 }
 
 // Print signal level

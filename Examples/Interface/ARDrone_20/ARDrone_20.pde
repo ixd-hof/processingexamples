@@ -7,6 +7,7 @@ IARDrone drone;
 void setup()
 {
   drone = new ARDrone();
+  /*
   drone.addExceptionListener(new IExceptionListener() {
     public void exeptionOccurred(ARDroneException exc)
     {
@@ -14,6 +15,7 @@ void setup()
     }
   }
   );
+  */
 
   drone.start();
   
@@ -30,12 +32,10 @@ void keyPressed()
     drone.getCommandManager().takeOff();
   else if (keyCode == DOWN)
     drone.getCommandManager().landing();
-    /*
   else if (keyCode == LEFT)
-    send_command(rotate_left);
+    drone.getCommandManager().spinLeft(30);
   else if (keyCode == RIGHT)
-    send_command(rotate_right);
-    */
+    drone.getCommandManager().spinRight(30);
 }
 
 void send_command(String command)

@@ -4,6 +4,8 @@
 
 // A very basic example hwo to render a sketch on Oculus Rift
 
+/* @pjs preload="buzz.jpg"; */
+
 PShader barrel;
 PGraphics fb;
 PGraphics scene;

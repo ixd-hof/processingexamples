@@ -19,6 +19,10 @@ void setup()
 
 void draw()
 {
+  for (int i=0; i<player.length(); i+=100)
+  {
+    
+  }
   if (player.isPlaying() == true)
   {
     background(255, 100, 0);

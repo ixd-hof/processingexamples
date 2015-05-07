@@ -3,7 +3,7 @@ import SimpleOpenNI.*;
 PImage depth_img;
 PImage rgb_img;
 
-SimpleOpenNI context;
+SimpleOpenNI kinect;
 
 void setup()
 {
@@ -14,17 +14,16 @@ void setup()
   
   frameRate(20);
 
-  // Enable OpenNI
-  context = new SimpleOpenNI(this);
+  // Enable OpenNI / Kinect with live camera
+  //kinect = new SimpleOpenNI(this);
   
-  // Load recorded scene
-  // Comment out for live image
-  context.openFileRecording("test.oni");
+  // Enable OpenNI with pre recorded .oni file
+  kinect = new SimpleOpenNI(this, "ml.oni");
   
-  context.setMirror(true);
-  context.enableDepth(); // Kinect depth image
-  context.enableRGB(); // Kinect color image
-  context.enableUser(SimpleOpenNI.SKEL_PROFILE_ALL); // enable skeleton
+  kinect.setMirror(true);
+  kinect.enableDepth(); // Kinect depth image
+  kinect.enableRGB(); // Kinect color image
+  kinect.enableUser(); // enable skeleton
 }
 
 void draw()
@@ -32,10 +31,10 @@ void draw()
   background(0);
 
   // update OpenNI
-  context.update();
+  kinect.update();
   // get depth and color image
-  depth_img = context.depthImage();
-  rgb_img = context.rgbImage();
+  depth_img = kinect.depthImage();
+  rgb_img = kinect.rgbImage();
   
   // display despth image
   image(depth_img, 0, 0);
