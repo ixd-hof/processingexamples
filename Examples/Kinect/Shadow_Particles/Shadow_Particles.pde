@@ -1,4 +1,10 @@
 import SimpleOpenNI.*;
+import punktiert.math.Vec;
+import punktiert.physics.*;
+import java.util.List;
+
+VPhysics physics;
+List<VParticle> particles;
 
 SimpleOpenNI context;
 
@@ -11,6 +17,23 @@ int dot_res = 5;
 void setup()
 {
   size(640, 480, P3D);
+
+  physics = new VPhysics();
+
+  // Create Particles
+  for (int i = 0; i < 100; i++)
+  {
+    //vector for position
+    Vec pos = new Vec (random(width), random(height));
+    //create particle (Vec pos, mass, radius)
+    VParticle particle = new VParticle(pos, 1, 10);
+    //add Collision Behavior
+    particle.addBehavior(new BCollision());
+    //add particle to world
+    physics.addParticle(particle);
+  }
+  particles = physics.getParticles();
+
   context = new SimpleOpenNI(this);
   frameRate(30);
 
@@ -53,9 +76,9 @@ void draw()
     shadows.background(0, 0);
     shadows.fill(0);
     shadows.noStroke();
-    for (int y=0; y<context.depthHeight(); y+=dot_res)
+    for (int y=0; y<context.depthHeight (); y+=dot_res)
     {
-      for (int x=0; x<context.depthWidth(); x+=dot_res)
+      for (int x=0; x<context.depthWidth (); x+=dot_res)
       {
         int index = x + y * context.depthWidth();
         // == 0 to create a mask
@@ -63,17 +86,21 @@ void draw()
         if (userMap[index] > 0)
         {
           shadows.rect(x, y, dot_res, dot_res);
+          for (int i = 0; i < 100; i++)
+          {
+            //VParticle particle = physics.
+          }
         }
       }
     }
     shadows.endDraw();
-    
+
     persons.beginDraw();
     persons.background(0, 0);
     persons.noStroke();
-    for (int y=0; y<context.depthHeight(); y+=dot_res)
+    for (int y=0; y<context.depthHeight (); y+=dot_res)
     {
-      for (int x=0; x<context.depthWidth(); x+=dot_res)
+      for (int x=0; x<context.depthWidth (); x+=dot_res)
       {
         int index = x + y * context.depthWidth();
         if (userMap[index] > 0)

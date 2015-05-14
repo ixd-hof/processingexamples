@@ -22,7 +22,10 @@ void draw()
 
   // draw depthImageMap
   image(context.depthImage(), 0, 0);
-  //image(context.userImage(),0,0);
+  image(context.userImage(), 0, 0);
+
+  int[]userMap = context.userMap();
+  println(userMap);
 
   int[] userList = context.getUsers();
   println(userList.length);
