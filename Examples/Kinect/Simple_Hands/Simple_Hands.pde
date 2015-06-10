@@ -15,10 +15,10 @@ void setup()
   frameRate(20);
 
   // Enable OpenNI / Kinect with live camera
-  //kinect = new SimpleOpenNI(this);
+  kinect = new SimpleOpenNI(this);
   
   // Enable OpenNI with pre recorded .oni file
-  kinect = new SimpleOpenNI(this, "ml.oni");
+  //kinect = new SimpleOpenNI(this, "ml.oni");
   
   kinect.setMirror(true);
   kinect.enableDepth(); // Kinect depth image

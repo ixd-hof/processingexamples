@@ -27,16 +27,30 @@ void setup()
 void draw() 
 {
   background(204);
-  
+
   if (mousePressed)
   {
     record = (PVector[])append(record, new PVector(mouseX, mouseY));
   }
-  else if (record.length > 0)
+  text(gesture, width/2, height/2);
+}
+
+void mouseReleased()
+{
+  if (record.length > 0)
   {
     result = recognizer.Recognize( record );
     gesture = result.Name;
     record = new PVector[0];
   }
-  text(gesture, width/2, height/2);
+
+  if (gesture == "circle")
+  {
+    println("Yeah! Circle...");
+  }
+  else if (gesture.indexOf("none") != -1)
+  {
+     println("What?"); 
+  }
 }
+
