@@ -1,0 +1,2143 @@
+
+<repository lastmodified='20110311054509.879' name='Weasis Bundle Repository'>
+  <resource id='jai-lib/1.1.4.b03' presentationname='Java Advanced Imaging [jai-lib]' symbolicname='jai-lib' uri='jai-lib-1.1.4-b03.jar' version='1.1.4.b03'>
+    <description>
+      The Java Advanced Imaging API extends the Java 2 platform by
+       allowing sophisticated, high-performance image processing
+       to be incorporated into Java applets and applications. It
+       is a set of classes providing imaging functionality beyond
+       that of    Java 2D and the Java Foundation classes, though
+       it is designed for compatibility with    those APIs. This
+       API implements a set of core image processing capabilities
+       including    image tiling, regions of interest, deferred execution
+       and a set of core image processing    operators, including
+       many common point, area, and frequency domain operators.
+    </description>
+    <size>
+      1595879
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Java Advanced Imaging [jai-lib]'/>
+      <p n='symbolicname' v='jai-lib'/>
+      <p n='version' t='version' v='1.1.4.b03'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.codec'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.iterator'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.media.jai.remote'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.tilecodec'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.media.jai.operator'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.media.jai.registry'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.codecimpl.fpx'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.remote'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.media.jai.util'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.medialib.mlib'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.rmi'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.opimage'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.media.jai'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.util'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.codecimpl.util'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.media.jai.widget'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.mlib'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.codecimpl'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.media.jai.iterator'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.widget'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.media.jai.tilecodec'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=com.sun.image.codec.jpeg)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.image.codec.jpeg
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.codec)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.codec
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.codecimpl)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.codecimpl
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.codecimpl.fpx)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.codecimpl.fpx
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.codecimpl.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.codecimpl.util
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.iterator)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.iterator
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.mlib)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.mlib
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.opimage)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.opimage
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.remote)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.remote
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.rmi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.rmi
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.tilecodec)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.tilecodec
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.util
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.widget)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.widget
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.medialib.mlib)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.medialib.mlib
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.iterator)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.iterator
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.operator)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.operator
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.registry)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.registry
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.remote)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.remote
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.tilecodec)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.tilecodec
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.util
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.widget)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.widget
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing
+    </require>
+    <require extend='false' filter='(&amp;(package=sun.awt.image)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package sun.awt.image
+    </require>
+    <require extend='false' filter='(&amp;(package=sun.awt.image.codec)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package sun.awt.image.codec
+    </require>
+    <require extend='false' filter='(&amp;(package=sun.security.action)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package sun.security.action
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.4))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.4))
+    </require>
+  </resource>
+  <resource id='jai-lib-linux-x86/1.1.4.b03' presentationname='JAI Native Linux x86 libraries' symbolicname='jai-lib-linux-x86' uri='jai-lib-linux-x86-1.1.4-b03.jar' version='1.1.4.b03'>
+    <description>
+      The Java Advanced Imaging API extends the Java 2 platform by
+       allowing sophisticated, high-performance image processing
+       to be incorporated into Java applets and applications. It
+       is a set of classes providing imaging functionality beyond
+       that of    Java 2D and the Java Foundation classes, though
+       it is designed for compatibility with    those APIs. This
+       API implements a set of core image processing capabilities
+       including    image tiling, regions of interest, deferred execution
+       and a set of core image processing    operators, including
+       many common point, area, and frequency domain operators.
+    </description>
+    <size>
+      1406953
+    </size>
+    <capability name='fragment'>
+      <p n='host' v='jai-lib'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='bundle'>
+      <p n='host' v='jai-lib'/>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='JAI Native Linux x86 libraries'/>
+      <p n='symbolicname' v='jai-lib-linux-x86'/>
+      <p n='version' t='version' v='1.1.4.b03'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='true' filter='(&amp;(symbolicname=jai-lib)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Required Host jai-lib
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='jai-lib-linux-x86-64/1.1.4.b03' presentationname='JAI Native Linux amd64 libraries' symbolicname='jai-lib-linux-x86-64' uri='jai-lib-linux-x86-64-1.1.4-b03.jar' version='1.1.4.b03'>
+    <description>
+      The Java Advanced Imaging API extends the Java 2 platform by
+       allowing sophisticated, high-performance image processing
+       to be incorporated into Java applets and applications. It
+       is a set of classes providing imaging functionality beyond
+       that of    Java 2D and the Java Foundation classes, though
+       it is designed for compatibility with    those APIs. This
+       API implements a set of core image processing capabilities
+       including    image tiling, regions of interest, deferred execution
+       and a set of core image processing    operators, including
+       many common point, area, and frequency domain operators.
+    </description>
+    <size>
+      1418019
+    </size>
+    <capability name='fragment'>
+      <p n='host' v='jai-lib'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='bundle'>
+      <p n='host' v='jai-lib'/>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='JAI Native Linux amd64 libraries'/>
+      <p n='symbolicname' v='jai-lib-linux-x86-64'/>
+      <p n='version' t='version' v='1.1.4.b03'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='true' filter='(&amp;(symbolicname=jai-lib)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Required Host jai-lib
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='jai-lib-windows-x86/1.1.4.b03' presentationname='JAI Native Windows x86 libraries' symbolicname='jai-lib-windows-x86' uri='jai-lib-windows-x86-1.1.4-b03.jar' version='1.1.4.b03'>
+    <description>
+      The Java Advanced Imaging API extends the Java 2 platform by
+       allowing sophisticated, high-performance image processing
+       to be incorporated into Java applets and applications. It
+       is a set of classes providing imaging functionality beyond
+       that of    Java 2D and the Java Foundation classes, though
+       it is designed for compatibility with    those APIs. This
+       API implements a set of core image processing capabilities
+       including    image tiling, regions of interest, deferred execution
+       and a set of core image processing    operators, including
+       many common point, area, and frequency domain operators.
+    </description>
+    <size>
+      2914278
+    </size>
+    <capability name='fragment'>
+      <p n='host' v='jai-lib'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='bundle'>
+      <p n='host' v='jai-lib'/>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='JAI Native Windows x86 libraries'/>
+      <p n='symbolicname' v='jai-lib-windows-x86'/>
+      <p n='version' t='version' v='1.1.4.b03'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='true' filter='(&amp;(symbolicname=jai-lib)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Required Host jai-lib
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='javax.vecmath/1.5.2' presentationname='Vecmath Library' symbolicname='javax.vecmath' uri='vecmath-1.5.2.jar' version='1.5.2'>
+    <size>
+      321498
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Vecmath Library'/>
+      <p n='symbolicname' v='javax.vecmath'/>
+      <p n='version' t='version' v='1.5.2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.vecmath'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+  </resource>
+  <resource id='mydoggy/1.5.0.b05' presentationname='MyDoggy - My Java Docking Framework' symbolicname='mydoggy' uri='mydoggy-1.5.0-b05.jar' version='1.5.0.b05'>
+    <size>
+      1000155
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='MyDoggy - My Java Docking Framework'/>
+      <p n='symbolicname' v='mydoggy'/>
+      <p n='version' t='version' v='1.5.0.b05'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.translucent'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.event'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.animation'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.images'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.cmp'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.cmp.multisplit'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.icons'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.cleaner'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.cmp.event'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.drag'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.descriptors'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.persistence.xml.merge'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.content.action'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.actions'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.look'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.common.context'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.support'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.util'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.cmp.border'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.content'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.persistence.xml'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.persistence'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.messages'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.noos.xing.mydoggy.plaf.ui.transparency'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='info.clearthought.layout'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=info.clearthought.layout)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package info.clearthought.layout
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.accessibility)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.accessibility
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.border)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.border
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.event
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.plaf)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.plaf
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.plaf.basic)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.plaf.basic
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.plaf.metal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.plaf.metal
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.event
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.actions)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.actions
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.cleaner)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.cleaner
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.common.context)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.common.context
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.descriptors)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.descriptors
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.persistence)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.persistence
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.persistence.xml)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.persistence.xml
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.persistence.xml.merge)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.persistence.xml.merge
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.support)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.support
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.animation)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.animation
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.cmp)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.cmp
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.cmp.border)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.cmp.border
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.cmp.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.cmp.event
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.cmp.multisplit)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.cmp.multisplit
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.content)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.content
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.content.action)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.content.action
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.drag)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.drag
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.icons)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.icons
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.images)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.images
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.look)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.look
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.messages)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.messages
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.translucent)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.translucent
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.transparency)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.transparency
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers
+    </require>
+    <require extend='false' filter='(|(ee=J2SE-1.5))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+  <resource id='org.apache.felix.bundlerepository/1.6.4' presentationname='Apache Felix Bundle Repository' symbolicname='org.apache.felix.bundlerepository' uri='org.apache.felix.bundlerepository-1.6.4.jar' version='1.6.4'>
+    <description>
+      Bundle repository service.
+    </description>
+    <size>
+      159604
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://felix.apache.org/site/apache-felix-osgi-bundle-repository.html
+    </documentation>
+    <source>
+      http://felix.apache.org/site/downloads.cgi
+    </source>
+    <capability name='service'>
+      <p n='service' v='org.apache.felix.bundlerepository.RepositoryAdmin'/>
+    </capability>
+    <capability name='service'>
+      <p n='service' v='org.osgi.service.obr.RepositoryAdmin'/>
+    </capability>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Felix Bundle Repository'/>
+      <p n='symbolicname' v='org.apache.felix.bundlerepository'/>
+      <p n='version' t='version' v='1.6.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.bundlerepository'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='2.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.xml.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.bundlerepository)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.bundlerepository ;version=[2.0.0,3.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.service.log ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.obr)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.service.obr ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.url)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.url ;version=[1.0.0,2.0.0)
+    </require>
+  </resource>
+  <resource id='org.apache.felix.configadmin/1.2.8' presentationname='Apache Felix Configuration Admin Service' symbolicname='org.apache.felix.configadmin' uri='org.apache.felix.configadmin-1.2.8.jar' version='1.2.8'>
+    <description>
+      Implementation of the OSGi Configuration Admin Service Specification
+       1.2
+    </description>
+    <size>
+      99649
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <category id='osgi'/>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Felix Configuration Admin Service'/>
+      <p n='symbolicname' v='org.apache.felix.configadmin'/>
+      <p n='version' t='version' v='1.2.8'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.cm'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.cm.file'/>
+      <p n='uses' v='org.apache.felix.cm,org.osgi.framework'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.cm'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.cm)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.cm ;version=[1.0.0,1.1.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.cm.file)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.cm.file ;version=[1.0.0,1.1.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=1.3.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.3.0)(!(version&gt;=1.4.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.cm ;version=[1.3.0,1.4.0)
+    </require>
+  </resource>
+  <resource id='org.apache.felix.gogo.command/0.8.0' presentationname='Apache Felix Gogo Command' symbolicname='org.apache.felix.gogo.command' uri='org.apache.felix.gogo.command-0.8.0.jar' version='0.8.0'>
+    <description>
+      Provides basic shell commands for Gogo.
+    </description>
+    <size>
+      47904
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Felix Gogo Command'/>
+      <p n='symbolicname' v='org.apache.felix.gogo.command'/>
+      <p n='version' t='version' v='0.8.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.log'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.service.command)(version&gt;=0.8.0)(status=provisional)(mandatory:&lt;*status))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.service.command ;version=0.8.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.log ;version=1.3.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.packageadmin ;version=1.2.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.startlevel)(version&gt;=1.1.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.startlevel ;version=1.1.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.3.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.util.tracker ;version=1.3.0
+    </require>
+  </resource>
+  <resource id='org.apache.felix.gogo.runtime/0.8.0' presentationname='Apache Felix Gogo Runtime' symbolicname='org.apache.felix.gogo.runtime' uri='org.apache.felix.gogo.runtime-0.8.0.jar' version='0.8.0'>
+    <description>
+      Apache Felix Gogo Subproject
+    </description>
+    <size>
+      70539
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Felix Gogo Runtime'/>
+      <p n='symbolicname' v='org.apache.felix.gogo.runtime'/>
+      <p n='version' t='version' v='0.8.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='mandatory' v='status'/>
+      <p n='package' v='org.apache.felix.service.command'/>
+      <p n='status' v='provisional'/>
+      <p n='version' t='version' v='0.8.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.gogo.api'/>
+      <p n='uses' v='org.apache.felix.service.command'/>
+      <p n='version' t='version' v='0.8.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='mandatory' v='status'/>
+      <p n='package' v='org.apache.felix.service.threadio'/>
+      <p n='status' v='provisional'/>
+      <p n='version' t='version' v='0.8.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.gogo.api)(version&gt;=0.8.0))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.gogo.api ;version=0.8.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.service.command)(version&gt;=0.8.0)(status=provisional)(mandatory:&lt;*status))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.service.command ;version=0.8.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.service.threadio)(version&gt;=0.8.0)(status=provisional)(mandatory:&lt;*status))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.service.threadio ;version=0.8.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.service.event
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.util.tracker
+    </require>
+  </resource>
+  <resource id='org.apache.felix.gogo.shell/0.8.0' presentationname='Apache Felix Gogo Shell' symbolicname='org.apache.felix.gogo.shell' uri='org.apache.felix.gogo.shell-0.8.0.jar' version='0.8.0'>
+    <description>
+      Apache Felix Gogo Subproject
+    </description>
+    <size>
+      51470
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Felix Gogo Shell'/>
+      <p n='symbolicname' v='org.apache.felix.gogo.shell'/>
+      <p n='version' t='version' v='0.8.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.service.command)(version&gt;=0.8.0)(status=provisional)(mandatory:&lt;*status))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.service.command ;version=0.8.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.startlevel)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.startlevel
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.util.tracker
+    </require>
+  </resource>
+  <resource id='org.apache.felix.javax.servlet/1.0.0' presentationname='Servlet 2.1 API' symbolicname='org.apache.felix.javax.servlet' uri='javax.servlet-1.0.0.jar' version='1.0.0'>
+    <description>
+      Servlet 2.1 API
+    </description>
+    <size>
+      33466
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <copyright>
+      Copyright 1999,2005 The Apache Software Foundation
+    </copyright>
+    <category id='servlet'/>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Servlet 2.1 API'/>
+      <p n='symbolicname' v='org.apache.felix.javax.servlet'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet.http'/>
+      <p n='uses' v='javax.servlet'/>
+      <p n='version' t='version' v='2.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='javax.servlet'/>
+      <p n='version' t='version' v='2.1.0'/>
+    </capability>
+  </resource>
+  <resource id='org.apache.felix.prefs/1.0.4' presentationname='Apache Felix Preferences Service' symbolicname='org.apache.felix.prefs' uri='org.apache.felix.prefs-1.0.4.jar' version='1.0.4'>
+    <description>
+      Implementation of the OSGi Preferences Service Specification
+       1.1
+    </description>
+    <size>
+      45824
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <category id='osgi'/>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Felix Preferences Service'/>
+      <p n='symbolicname' v='org.apache.felix.prefs'/>
+      <p n='version' t='version' v='1.0.4'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.prefs'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.prefs'/>
+      <p n='uses' v='org.osgi.service.prefs'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.prefs)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.prefs
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.log ;version=1.3.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.prefs)(version&gt;=1.1.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.prefs ;version=1.1.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.3.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.util.tracker ;version=1.3.0
+    </require>
+  </resource>
+  <resource id='org.apache.felix.scr/1.6.0' presentationname='Apache Felix Declarative Services' symbolicname='org.apache.felix.scr' uri='org.apache.felix.scr-1.6.0.jar' version='1.6.0'>
+    <description>
+      Implementation of the Declarative Services specification 1.1
+    </description>
+    <size>
+      199915
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://felix.apache.org/site/apache-felix-service-component-runtime.html
+    </documentation>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Felix Declarative Services'/>
+      <p n='symbolicname' v='org.apache.felix.scr'/>
+      <p n='version' t='version' v='1.6.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.scr'/>
+      <p n='uses' v='org.osgi.framework,org.osgi.service.component'/>
+      <p n='version' t='version' v='1.6.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.component'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.1.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.shell)(version&gt;=1.0.0))' multiple='false' name='package' optional='true'>
+      Import package org.apache.felix.shell ;version=1.0.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=[1.4.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.service.cm ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.component)(version&gt;=1.1.0)(!(version&gt;=1.2.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.component ;version=[1.1.0,1.2.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.service.log ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.metatype)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.service.metatype ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='true'>
+      Import package org.osgi.service.packageadmin ;version=[1.2.0,2.0.0)
+    </require>
+  </resource>
+  <resource id='org.apache.sling.commons.log/2.1.0' presentationname='Apache Sling OSGi LogService Implementation' symbolicname='org.apache.sling.commons.log' uri='org.apache.sling.commons.log-2.1.0.jar' version='2.1.0'>
+    <description>
+      Implementation of the OSGi Compendium Log Service using SLF4J
+              on top of a private implementation. In addition to
+       providing the        implemented SLF4J API, the Log4J and
+       Jakarta Commons Logging APIs        are provided with implementations
+       on top of the SLF4J API.
+    </description>
+    <size>
+      122801
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://sling.apache.org/site/logging.html
+    </documentation>
+    <category id='sling'/>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Sling OSGi LogService Implementation'/>
+      <p n='symbolicname' v='org.apache.sling.commons.log'/>
+      <p n='version' t='version' v='2.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.commons.logging'/>
+      <p n='version' t='version' v='1.1.1'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.log4j'/>
+      <p n='uses' v='org.slf4j'/>
+      <p n='version' t='version' v='1.2.15'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.slf4j'/>
+      <p n='version' t='version' v='1.5.11'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.log'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.servlet.http)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+      Import package javax.servlet.http
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=1.3.0
+    </require>
+  </resource>
+  <resource id='weasis-base-ui/0.5.5' presentationname='Weasis Base UI [weasis-base-ui]' symbolicname='weasis-base-ui' uri='weasis-base-ui-0.5.5.jar' version='0.5.5'>
+    <size>
+      63712
+    </size>
+    <license>
+      http://www.eclipse.org/legal/epl-v10.html
+    </license>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Weasis Base UI [weasis-base-ui]'/>
+      <p n='symbolicname' v='weasis-base-ui'/>
+      <p n='version' t='version' v='0.5.5'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.base.ui'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.base.ui.action'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.base.ui.gui'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.swing)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.border)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.border
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.event
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.table)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.table
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.text)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.text
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.tree)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.tree
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.event
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui.content)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui.content
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.4.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.util.tracker ;version=1.4.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.slf4j ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.base.ui)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.base.ui
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.base.ui.action)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.base.ui.action
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.base.ui.gui)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.base.ui.gui
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.command)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.command
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.media.data)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.media.data
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.service)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.service
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.docking)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.docking
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.editor)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.editor
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.editor.image)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.editor.image
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.util
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='weasis-core-api/0.5.5' presentationname='Weasis Core API [weasis-core-api]' symbolicname='weasis-core-api' uri='weasis-core-api-0.5.5.jar' version='0.5.5'>
+    <size>
+      366100
+    </size>
+    <license>
+      http://www.eclipse.org/legal/epl-v10.html
+    </license>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Weasis Core API [weasis-core-api]'/>
+      <p n='symbolicname' v='weasis-core-api'/>
+      <p n='version' t='version' v='0.5.5'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.image'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.service'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.media.data'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.media'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.explorer'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.image.util'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.command'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.image.op'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.gui.model'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.explorer.model'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.gui.task'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.gui.util'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.util'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.api.gui'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.codec)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.codec
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.opimage)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.opimage
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.util
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.accessibility)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.accessibility
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio.metadata)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio.metadata
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio.plugins.jpeg)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio.plugins.jpeg
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.iterator)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.iterator
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.operator)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.operator
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.registry)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.registry
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.util
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.border)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.border
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.event
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.filechooser)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.filechooser
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.plaf)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.plaf
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.plaf.basic)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.plaf.basic
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.table)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.table
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.text)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.text
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.tree)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.tree
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.namespace
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.prefs)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.prefs
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.prefs)(version&gt;=1.1.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.prefs ;version=1.1.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.4.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.util.tracker ;version=1.4.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.slf4j ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.command)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.command
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui.task)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui.task
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image.op)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image.op
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.media)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.media
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.media.data)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.media.data
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.service)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.service
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='weasis-core-ui/0.5.5' presentationname='Weasis UI API (j2se) [weasis-core-ui]' symbolicname='weasis-core-ui' uri='weasis-core-ui-0.5.5.jar' version='0.5.5'>
+    <size>
+      405633
+    </size>
+    <license>
+      http://www.eclipse.org/legal/epl-v10.html
+    </license>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Weasis UI API (j2se) [weasis-core-ui]'/>
+      <p n='symbolicname' v='weasis-core-ui'/>
+      <p n='version' t='version' v='0.5.5'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.ui.graphic'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.ui.graphic.model'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.ui.editor'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.ui.editor.image'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.ui'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.ui.docking'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.core.ui.util'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.media.jai)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.iterator)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.iterator
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.border)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.border
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.event
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.plaf)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.plaf
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.plaf.basic)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.plaf.basic
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.table)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.table
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.text)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.text
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.tree)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.tree
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf.ui)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf.ui
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.prefs)(version&gt;=1.1.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.prefs ;version=1.1.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.util.tracker)(version&gt;=1.4.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.util.tracker ;version=1.4.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image.op)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image.op
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.media.data)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.media.data
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.service)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.service
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.docking)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.docking
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.editor)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.editor
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.editor.image)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.editor.image
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.graphic)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.graphic
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.graphic.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.graphic.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.util
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='weasis-dicom-codec/0.5.5' presentationname='DICOM Codec [weasis-dicom-codec]' symbolicname='weasis-dicom-codec' uri='weasis-dicom-codec-0.5.5.jar' version='0.5.5'>
+    <size>
+      869050
+    </size>
+    <license>
+      http://www.eclipse.org/legal/epl-v10.html
+    </license>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='DICOM Codec [weasis-dicom-codec]'/>
+      <p n='symbolicname' v='weasis-dicom-codec'/>
+      <p n='version' t='version' v='0.5.5'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.dicom.codec'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.dicom.codec.pref'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.dicom.codec.wado'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.dicom.codec.geometry'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.dicom.codec.display'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.dcm4che2.imageio.plugins.dcm'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.dcm4che2.imageioimpl.plugins.dcm'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.dcm4che2.image'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.dcm4che2.util'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.dcm4che2.imageio'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.dcm4che2.imageioimpl.plugins.rle'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.dcm4che2.media'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.dcm4che2.io'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.dcm4che2.data'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=com.sun.media.imageio.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.imageio.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.util
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio.metadata)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio.metadata
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio.spi
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.operator)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.operator
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.border)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.border
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.vecmath)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.vecmath
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.namespace
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.data)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.data
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.image)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.image
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.imageio)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.imageio
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.imageio.plugins.dcm)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.imageio.plugins.dcm
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.imageioimpl.plugins.dcm)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.imageioimpl.plugins.dcm
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.imageioimpl.plugins.rle)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.imageioimpl.plugins.rle
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.io)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.io
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.media)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.media
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.3.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.cm ;version=1.3.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.prefs)(version&gt;=1.1.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.prefs ;version=1.1.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.slf4j ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image.op)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image.op
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.media)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.media
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.media.data)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.media.data
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.service)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.service
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec.display)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec.display
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec.geometry)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec.geometry
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec.pref)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec.pref
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec.wado)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec.wado
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.ext)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.ext
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax.helpers
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='weasis-dicom-explorer/0.5.5' presentationname='DICOM Data Explorer [weasis-dicom-explorer]' symbolicname='weasis-dicom-explorer' uri='weasis-dicom-explorer-0.5.5.jar' version='0.5.5'>
+    <size>
+      173140
+    </size>
+    <license>
+      http://www.eclipse.org/legal/epl-v10.html
+    </license>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='DICOM Data Explorer [weasis-dicom-explorer]'/>
+      <p n='symbolicname' v='weasis-dicom-explorer'/>
+      <p n='version' t='version' v='0.5.5'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.dicom.explorer'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.dicom.explorer.pref'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.dicom.explorer.wado'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.swing)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.border)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.border
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.event
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.text)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.text
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.tree)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.tree
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.namespace
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.transform.stax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.transform.stax
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.validation)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.validation
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.data)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.data
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.io)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.io
+    </require>
+    <require extend='false' filter='(&amp;(package=org.dcm4che2.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.dcm4che2.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.component)(version&gt;=1.1.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.component ;version=1.1.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.prefs)(version&gt;=1.1.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.prefs ;version=1.1.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.slf4j ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.command)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.command
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui.task)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui.task
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.media)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.media
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.media.data)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.media.data
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.service)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.service
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.docking)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.docking
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.editor)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.editor
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.editor.image)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.editor.image
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec.display)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec.display
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec.geometry)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec.geometry
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec.wado)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec.wado
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.explorer)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.explorer
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.explorer.pref)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.explorer.pref
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.explorer.wado)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.explorer.wado
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='weasis-dicom-viewer2d/0.5.5' presentationname='2D DICOM Viewer [weasis-dicom-viewer2d]' symbolicname='weasis-dicom-viewer2d' uri='weasis-dicom-viewer2d-0.5.5.jar' version='0.5.5'>
+    <size>
+      109278
+    </size>
+    <license>
+      http://www.eclipse.org/legal/epl-v10.html
+    </license>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='2D DICOM Viewer [weasis-dicom-viewer2d]'/>
+      <p n='symbolicname' v='weasis-dicom-viewer2d'/>
+      <p n='version' t='version' v='0.5.5'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.dicom.viewer2d'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.dicom.viewer2d.dockable'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=javax.media.jai)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai.iterator)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai.iterator
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.border)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.border
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.event
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.swing.tree)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.swing.tree
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy
+    </require>
+    <require extend='false' filter='(&amp;(package=org.noos.xing.mydoggy.plaf)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.noos.xing.mydoggy.plaf
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.prefs)(version&gt;=1.1.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.prefs ;version=1.1.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.slf4j ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.gui.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.gui.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image.op)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image.op
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.media)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.media
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.media.data)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.media.data
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.service)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.service
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.docking)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.docking
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.editor)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.editor
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.editor.image)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.editor.image
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.graphic)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.graphic
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.graphic.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.graphic.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.ui.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.ui.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec.display)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec.display
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.codec.geometry)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.codec.geometry
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.explorer)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.explorer
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.explorer.pref)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.explorer.pref
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.explorer.wado)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.explorer.wado
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.viewer2d)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.viewer2d
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.dicom.viewer2d.dockable)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.dicom.viewer2d.dockable
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='weasis-imageio-codec/0.7.3' presentationname='ImageIO Codec [weasis-imageio-codec]' symbolicname='weasis-imageio-codec' uri='weasis-imageio-codec-0.7.3.jar' version='0.7.3'>
+    <size>
+      816848
+    </size>
+    <license>
+      http://www.eclipse.org/legal/epl-v10.html
+    </license>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='ImageIO Codec [weasis-imageio-codec]'/>
+      <p n='symbolicname' v='weasis-imageio-codec'/>
+      <p n='version' t='version' v='0.7.3'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.weasis.imageio.codec'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.imageio.plugins.jpeg2000'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.imageio.plugins.pnm'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.imageio.plugins.bmp'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.imageio.plugins.tiff'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.imageio.stream'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.imageioimpl'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.jai.operator'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.sun.media.imageioimpl.common'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=com.sun.media.imageio.plugins.bmp)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.imageio.plugins.bmp
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.imageio.plugins.jpeg2000)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.imageio.plugins.jpeg2000
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.imageio.plugins.pnm)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.imageio.plugins.pnm
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.imageio.plugins.tiff)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.imageio.plugins.tiff
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.imageio.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.imageio.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.imageioimpl.common)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.imageioimpl.common
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.imageioimpl)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.imageioimpl
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.operator)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.operator
+    </require>
+    <require extend='false' filter='(&amp;(package=com.sun.media.jai.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package com.sun.media.jai.util
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio.event)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio.event
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio.metadata)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio.metadata
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio.plugins.jpeg)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio.plugins.jpeg
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio.spi
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.imageio.stream)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.imageio.stream
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.media.jai)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.media.jai
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.parsers
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.slf4j)(version&gt;=1.5.0))' multiple='false' name='package' optional='false'>
+      Import package org.slf4j ;version=1.5.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.w3c.dom
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.explorer.model)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.explorer.model
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.image.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.image.util
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.core.api.media.data)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.core.api.media.data
+    </require>
+    <require extend='false' filter='(&amp;(package=org.weasis.imageio.codec)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.weasis.imageio.codec
+    </require>
+    <require extend='false' filter='(&amp;(package=org.xml.sax)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.xml.sax
+    </require>
+    <require extend='false' filter='(&amp;(package=sun.security.action)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package sun.security.action
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='weasis-imageio-codec-linux-x86/1.2.0.b04' presentationname='ImageIO native Linux x86 codec' symbolicname='weasis-imageio-codec-linux-x86' uri='weasis-imageio-codec-linux-x86-1.2-b04.jar' version='1.2.0.b04'>
+    <size>
+      506261
+    </size>
+    <license>
+      http://www.eclipse.org/legal/epl-v10.html
+    </license>
+    <capability name='fragment'>
+      <p n='host' v='weasis-imageio-codec'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='bundle'>
+      <p n='host' v='weasis-imageio-codec'/>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='ImageIO native Linux x86 codec'/>
+      <p n='symbolicname' v='weasis-imageio-codec-linux-x86'/>
+      <p n='version' t='version' v='1.2.0.b04'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='true' filter='(&amp;(symbolicname=weasis-imageio-codec)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Required Host weasis-imageio-codec
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='weasis-imageio-codec-linux-x86-64/1.2.0.b04' presentationname='ImageIO native Linux amd64 codec' symbolicname='weasis-imageio-codec-linux-x86-64' uri='weasis-imageio-codec-linux-x86-64-1.2-b04.jar' version='1.2.0.b04'>
+    <size>
+      574621
+    </size>
+    <license>
+      http://www.eclipse.org/legal/epl-v10.html
+    </license>
+    <capability name='fragment'>
+      <p n='host' v='weasis-imageio-codec'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='bundle'>
+      <p n='host' v='weasis-imageio-codec'/>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='ImageIO native Linux amd64 codec'/>
+      <p n='symbolicname' v='weasis-imageio-codec-linux-x86-64'/>
+      <p n='version' t='version' v='1.2.0.b04'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='true' filter='(&amp;(symbolicname=weasis-imageio-codec)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Required Host weasis-imageio-codec
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+  <resource id='weasis-imageio-codec-windows-x86/1.2.0.b04' presentationname='ImageIO native Windows x86 codec' symbolicname='weasis-imageio-codec-windows-x86' uri='weasis-imageio-codec-windows-x86-1.2-b04.jar' version='1.2.0.b04'>
+    <size>
+      725819
+    </size>
+    <license>
+      http://www.eclipse.org/legal/epl-v10.html
+    </license>
+    <capability name='fragment'>
+      <p n='host' v='weasis-imageio-codec'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <capability name='bundle'>
+      <p n='host' v='weasis-imageio-codec'/>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='ImageIO native Windows x86 codec'/>
+      <p n='symbolicname' v='weasis-imageio-codec-windows-x86'/>
+      <p n='version' t='version' v='1.2.0.b04'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
+    <require extend='true' filter='(&amp;(symbolicname=weasis-imageio-codec)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Required Host weasis-imageio-codec
+    </require>
+    <require extend='false' filter='(|(ee=JavaSE-1.6))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=JavaSE-1.6))
+    </require>
+  </resource>
+</repository>
