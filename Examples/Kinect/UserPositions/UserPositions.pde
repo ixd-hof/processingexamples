@@ -30,7 +30,7 @@ void draw()
   context.update();
   
   // Draw depth image
-  image(context.depthImage(), 0, 0);
+  image(context.depthImage(), 120, 80);
   
   // Get number of users in scene
   int userCount = context.getNumberOfUsers();

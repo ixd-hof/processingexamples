@@ -15,7 +15,7 @@ SamplePlayer player;
 
 void setup() {
   size(300, 300);
-  
+
   // Sound player
   ac = new AudioContext();
   // Add your sound file as WAV or AIFF (not MP3)
@@ -27,7 +27,7 @@ void setup() {
   rateValue = new Glide(ac, 0, 20);
   player.setRate(rateValue);
   rateValue.setValue(4);
-  
+
   // Output volume
   Gain g = new Gain(ac, 2, 1);
   g.addInput(player);
@@ -44,7 +44,11 @@ void draw()
   println(speed);
   // set player speed to that value (left slow, right fast)
   rateValue.setValue(speed);
-  
+
+  float out = ac.out.getValue()*100;
+  ellipse(width/2, height/2, out, out);
+  println(out);
+
   //println(player.inLoop());
   //if (!player.inLoop())
   //  player.setToLoopStart();
