@@ -56,25 +56,7 @@ void loop() {
     client.stop();
   }
 
-  /*
-  if (filling >= 0 && filling < NUMPIXELS)
-  {
-    for (int i = 0; i < filling; i++)
-    {
-      pixels.setPixelColor(i, pixels.Color(r, g, b));
-      delay(100);
-      filling ++;
-    }
-  }
-  else if (filling == p)
-  {
-    filling = -1;
-  }
-  else
-  {
-  */
   delay(50); // Poll every 50ms
-  //}
 }
 
 void process(YunClient client) {
