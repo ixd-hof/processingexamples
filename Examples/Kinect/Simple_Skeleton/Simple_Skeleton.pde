@@ -18,7 +18,7 @@ void setup()
   kinect = new SimpleOpenNI(this);
   
   // Enable OpenNI with pre recorded .oni file
-  //kinect = new SimpleOpenNI(this, "ml.oni");
+  kinect = new SimpleOpenNI(this, "ml.oni");
   
   kinect.setMirror(true);
   kinect.enableDepth(); // Kinect depth image
@@ -32,6 +32,7 @@ void draw()
 
   // update OpenNI
   kinect.update();
+  
   // get depth and color image
   depth_img = kinect.depthImage();
   rgb_img = kinect.rgbImage();
