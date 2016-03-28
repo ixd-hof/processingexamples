@@ -8,6 +8,8 @@ void setup()
 {
   size(500, 500);
   background(100);
+  frameRate(10);
+  
   // Connect to Minecraft server (localhost)
   mc = Minecraft.connect();
   // Connect to Minecraft server ip
@@ -16,7 +18,6 @@ void setup()
 
 void draw()
 {
-  
 }
 
 void paint()
@@ -27,8 +28,8 @@ void paint()
   int size = 20;
   int x = int(map(mouseX, 0, width, 0, size));
   int z = int(map(mouseY, 0, height, 0, size));
-  mc.setBlock(x, position.y+10, z, Block.TNT);
-  
+  mc.setBlock(x, y, position.z+size/2, Block.TNT);
+
   // Paint on screen
   line(pmouseX, pmouseY, mouseX, mouseY);
 }
