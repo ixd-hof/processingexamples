@@ -4,7 +4,7 @@ http://www.juniorlab.de
 
 This year we'll teach kids at the Easter Juniorlab in Berlin how to create experimental interfaces and controllers for Minecraft with Processing.
 
-http://ixd-hof.de/wp-content/uploads/2016/03/LittleBits_Minecraft_800.jpg
+![Littlebits](http://ixd-hof.de/wp-content/uploads/2016/03/LittleBits_Minecraft_800.jpg)
 
 ###Examples:
 ####JL01_LittleBits_HID_Minecraft
