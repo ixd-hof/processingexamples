@@ -9,19 +9,19 @@ This year we'll teach kids at the Easter Juniorlab in Berlin how to create exper
 We're using zhuowei's (RaspberryJuice)[https://github.com/zhuowei/RaspberryJuice/tree/master/src/main/resources/mcpi/api/java] Java Library in Processing. @bitcraftlab is currently writing a Processing library.
 
 ###Examples:
-####JL01_LittleBits_HID_Minecraft
+####(JL01_LittleBits_HID_Minecraft)[https://github.com/ixd-hof/Processing/tree/master/JuniorlabEaster2016/Arduino/JL01_LittleBits_HID_Minecraft]
 Using LittleBits Android as Mouse / Keyboard and control Minecraft (jump, turn)
 
-####JL01_LittleBits_Arduino_Basic
+####(JL01_LittleBits_Arduino_Basic)[https://github.com/ixd-hof/Processing/tree/master/JuniorlabEaster2016/Processing/JL01_LittleBits_Arduino_Basic]
 Write Firmata Basic (Examples) on the LittleBits Arduino (Leonardo) and access inputs and outputs from Processing.
 
-####JL02_LittleBits_Arduino_Minecraft
+####(JL02_LittleBits_Arduino_Minecraft)[https://github.com/ixd-hof/Processing/tree/master/JuniorlabEaster2016/Processing/JL02_LittleBits_Arduino_Minecraft]
 Catapult player by pressing a button and create blocks above the player from within Processing
 
-####JL03_LittleBits_Arduino_Minecraft_Math
+####(JL03_LittleBits_Arduino_Minecraft_Math)[https://github.com/ixd-hof/Processing/tree/master/JuniorlabEaster2016/Processing/JL03_LittleBits_Arduino_Minecraft_Math]
 Simple math exmaples: Create circles of blocks while rotating a knob and draw sinus curves.
 
-####JL04_LittleBits_Minecraft_Painter
+####(JL04_LittleBits_Minecraft_Painter)[https://github.com/ixd-hof/Processing/tree/master/JuniorlabEaster2016/Processing/JL04_LittleBits_Minecraft_Painter]
 Painting with the mouse in a Processing sketch creates blocks in Minecraft.
 
 
