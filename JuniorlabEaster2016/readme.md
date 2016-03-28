@@ -4,7 +4,7 @@ http://www.juniorlab.de
 
 This year we'll teach kids at the Easter Juniorlab in Berlin how to create experimental interfaces and controllers for Minecraft with Processing.
 
-![Littlebits](http://ixd-hof.de/wp-content/uploads/2016/03/LittleBits_Minecraft_800.jpg)
+![Littlebits](http://ixd-hof.de/wp-content/uploads/2016/03/LittleBits_Minecraft_500.jpg)
 
 ###Examples:
 ####JL01_LittleBits_HID_Minecraft
@@ -28,3 +28,9 @@ We are using MinecraftEdu on OS X and Windows. MinecraftEdu's server runs on For
 
 Here's a tutorial that shows some of the commands:
 http://www.stuffaboutcode.com/2013/04/minecraft-pi-edition-api-tutorial.html
+
+####Tips:
+In order to prevent Minecraft from sleeping when you're editing in Processing:
+Set in Minecraft's options.txt pauseOnLostFocus:false
+
+Copy mcpiapi mod in your Minecraft server and client mod folder.
