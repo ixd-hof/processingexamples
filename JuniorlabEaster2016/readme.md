@@ -6,6 +6,8 @@ This year we'll teach kids at the Easter Juniorlab in Berlin how to create exper
 
 ![Littlebits](http://ixd-hof.de/wp-content/uploads/2016/03/LittleBits_Minecraft_500.jpg)
 
+We're using zhuowei's (RaspberryJuice)[https://github.com/zhuowei/RaspberryJuice/tree/master/src/main/resources/mcpi/api/java] Java Library in Processing. @bitcraftlab is currently writing a Processing library.
+
 ###Examples:
 ####JL01_LittleBits_HID_Minecraft
 Using LittleBits Android as Mouse / Keyboard and control Minecraft (jump, turn)
